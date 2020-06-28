@@ -1,0 +1,44 @@
+<footer class="pt-5 pb-3 footer  footer-dark bg-tertiary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="pr-lg-5">
+            <h1 class="heading h6 text-uppercase font-weight-700 mb-3"><strong>About</strong></h1>
+            <p>Studying Sensing, Perception, and Action in Computers and Humans.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md">
+          <h5 class="heading h6 text-uppercase font-weight-700 mb-3">Navigation</h5>
+          <ul class="list-unstyled text-small">
+            {% for menu_item in site.data.website.menu %}
+              <li><a class="text-muted" href="{{ menu_item.url }}">{{ menu_item.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex align-items-center">
+        <span class="">
+          &copy; {{ site.data.website.current_year }} <a href="{{ site.url }}" class="footer-link" target="_blank">{{ site.data.website.base_title }}</a>. All rights reserved<a href="http://kirillragozin.com" class="designed-by footer-link" target="_blank">.</a>
+        </span>
+        
+        <ul class="nav ml-lg-auto">
+          {% if site.data.website.contact.instagram %}
+            <li class="nav-item">
+            <a class="nav-link active" href="https://instagram.com/webpixelsofficial" target="_blank"><i class="fab fa-instagram"></i></a>
+          </li>
+          {% endif %}
+          {% if site.data.website.contact.facebook %}
+            <li class="nav-item">
+            <a class="nav-link" href="https://facebook.com/webpixels" target="_blank"><i class="fab fa-facebook"></i></a>
+          </li>
+          {% endif %}
+          {% if site.data.website.contact.github %}
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/webpixels" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </footer>

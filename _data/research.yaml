@@ -1,0 +1,143 @@
+# Developer comment:
+#   This is the main file that will contain all research entries.
+#   When used, the data from this file is first sorted by year (if present) 
+#   and then within each year it is shown in order it appears in this file.
+#   All entries without the year appear last.
+#
+#   All images, pdfs and videos were taken from the existing website with their original name.
+#   Locally stored files reside in the "/uploads" folder that's split into "image" and "pdf" subfolders for convenience
+#   External urls remain the same
+#
+#   For the time being, it contains just the minimal amount to ensure the functionality.
+#   You can start making edits and adding entries as soon as we agree that this data structure makes sense and covers all the needs.
+
+
+- title: "From Pulse Trains to “Coloring with Vibrations”: Motion Mappings for Mid-Air Haptic Textures"
+  year: 2018
+  authors: Paul Strohmeier , Sebastian Boring and Kasper Hornbæk
+  venue: Human Factors in Computing Systems (CHI)
+  description: In this paper we explore rendering textures in 3D space. As our feedback system does not provide the counter-force one experiences when interacting with a surface texture, it is not clear how such mid-air textures might be perceived. We present a qualitative analysis of the experience of interacting with mid-air textures, and how input parameters influence this experience.
+  image: /uploads/image/2018_MotionMapping.jpg
+  tags: 
+    - text: paper
+      style: tertiary
+  links:
+    - name: pdf
+      url: /uploads/pdf/018_CHI_midAirTextures.pdf
+    - name: video
+      url: https://www.youtube.com/watch?v=pJ8MiFiMWHI
+
+- title: "zPatch: Hybrid Resistive/Capacitive eTextile Inputs"
+  year: 2018
+  authors: Paul Strohmeier, Jarrod Knibbe, Sebastian Boring and Kasper Hornbæk
+  venue: Tangible, Embedded, and Embodied Interaction (TEI)
+  description: Touch input on clothing is difficult as there are ample opportunities for unintentional activation. In this paper we present a simple fabric design that acts as both a resistive and a capacitive sensor. We present instructions on how to build it and we demonstrate that the resulting hybrid sensor is more robust than either resistive- or capacitive-only equivalents and that the additional information improves the detection of custom gestures.
+  image: /uploads/image/2018_zPatch.jpg
+  tags: 
+    - text: paper
+      style: tertiary
+  links:
+    - name: pdf
+      url: /uploads/pdf/2018_TEI_zPatch.pdf
+    - name: video
+      url: https://www.youtube.com/watch?v=pJ8MiFiMWHI
+    - name: "video: raw data"
+      url: https://youtu.be/QtwzcwgglOA
+    - name: github
+      url: https://zpatch.github.io/
+    - name: evaluation data
+      url: https://github.com/fkeel/zPatch
+    - name: instructables
+      url: https://www.instructables.com/id/ZPatch-Hybrid-ResistiveCapacitive-ETextile-Input/
+
+- title: Automatic Calibration of High Density Electric Muscle Stimulation
+  year: 2017
+  authors: Jarrod Knibbe, Paul Strohmeier, Sebastian Boring and Kasper Hornbæk
+  venue: Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)
+  description: Using methods presented in this paper we could in the future record the skilled movement of an expert musician and play them back using the hands and fingers of a novice. I assisted in designing the electronics and implemented the circuitry.
+  image: /uploads/image/2017_IMWUT_EMSCalibration-700x732.jpg
+  tags: 
+    - text: paper
+      style: tertiary
+  links:
+    - name: pdf
+      url: /uploads/pdf/2017_IMWUT_EMSCalibration-287x300.jpg
+
+- title: "ReFlex: A Flexible Smartphone with Active Haptic Feedback for Bend Input"
+  year: 2016
+  authors: Paul Strohmeier, Jesse Burstyn, JP Carrascal, Vincent Levesque Roel Vertegaal
+  venue: International Conference on Tangible, Embedded, and Embodied Interaction (TEI) 2016 
+  description: We presented the first fully functional, wireless flexible phone. In cooperation with Immersion we augmented the phone with a haptic actuator. This allows us to change how the material properties of the phone are experienced. We conducted studies investigating bend-input mappings to haptic feedback styles.
+  image: /uploads/image/2016_Reflex-300x300.jpg
+  tags: 
+    - text: paper
+      style: tertiary
+  links:
+    - name: pdf
+      url: /uploads/pdf/2015_TEI_DisplaySkin.pdf
+
+- title: "What can Doodles on the Arm teach us about On-Body Interaction?"
+  year: 2016
+  authors: Paul Strohmeier, Juan Pablo Carrascal, Kasper Hornbæk
+  venue: Extended Abstracts on Human Factors in Computing Systems (CHI EA)
+  description: While on-body interaction is treated as a novel concept in HCI, we point out that it is not necessarily the case. One way in which on-body interaction is quite common is the habit of doodling or writing notes on one’s arm. We presented a survey that explores this practice, in hope that it may serve as inspiration for future HCI explorations. 
+  image: /uploads/image/2015_doodles-1-300x300.jpg
+  tags: 
+    - text: poster/demo
+      style: tertiary
+  links:
+    - name: pdf
+      url: /uploads/pdf/2016_CHI_Doodles.pdf
+    - name: video
+      url: /uploads/pdf/handout.pdf
+
+- title: "DIY IR sensors for augmenting objects and human skin"
+  year: 2015
+  authors: Paul Strohmeier
+  venue: Augmented Human (AH)
+  description: I presented various IR based sensors that I had designed over the previous years.
+  image: /uploads/image/2015_IR_Sensor_small-1-300x300.jpg
+  tags: 
+    - text: poster/demo
+      style: tertiary
+  links:
+    - name: pdf
+      url: /uploads/pdf/015_AH_IRSensors.pdf
+    - name: poster
+      url: /uploads/image/2015_AH_IRSensors_Poster.jpg
+    - name: "Best Poster Award"
+      url: /uploads/image/2015_AH_Award.jpg
+
+- title: "Special Topic: Taking Action in a Changing World."
+  authors: Ann Light, Chris Frauenberger, Jennifer Preece, Paul Strohmeier, and Maria Angela Ferrario (2017)
+  venue: ACM Interactions Magazine
+  tags: 
+    - text: commentary
+      style: tertiary
+  links:
+    - name: pdf
+      url: /uploads/pdf/2017_Interactions_SpecialTopic.pdf
+
+- title: "Second Skin: An Exploration of eTextile Stretch Circuits on the Body"
+  authors: Rachel Freire, Cedric Honnet, Paul Strohmeier (2017)
+  venue: Tangible, Embedded and Embodied Interaction (TEI)
+  tags: 
+    - text: interactive art
+      style: tertiary
+  links:
+    - name: pdf
+      url: /uploads/pdf/2017_TEI_SecondSKin.pdf
+
+- title: "Demo Hour"
+  authors: Jinsil Hwaryoung Seo, Annie Sungkajun, Meghan Cook, Young Suk Lee, Susanna Hertrich, Akitoshi Honda, Rachel Freire, Paul Strohmeier, Cedric Honnet
+  venue: ACM Interactions Magazine
+  tags: 
+    - text: showcase
+      style: tertiary
+  links:
+    - name: pdf 
+      url: /uploads/pdf/2017_Interactions_SpecialTopic.pdf
+
+
+
+

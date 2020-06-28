@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include nav.html %}
+    <main class="main">
+      {% include page_top_section.html %}
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
+    {% include footer.html %}  
+    {% include footer_scripts.html %}
+  </body>
+</html>
