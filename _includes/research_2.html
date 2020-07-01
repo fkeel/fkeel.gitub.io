@@ -39,7 +39,7 @@
                     {% for tag in research_entry.tags %}
                       {% assign style = tag.style %}
                       {% assign tag_style = site.data.website.tag_styles | where: "name",style | limit:1 %}
-                      <span class="badge badge-lg badge-pill {{ tag_style[0].css }} text-uppercase mb-1">{{tag.text}}</span>
+                      <span class="badge badge-lg badge-pill {{ tag_style[0].css }} text-uppercase mb-1" style="{% if tag.style %}{{ tag.style }}{% endif %}">{{tag.text}}</span>
                       <!-- <span class="text-muted">[ {{tag.text}} ]</span> -->
                     {% endfor%}
                     <h4>{{research_entry.title}}</h4>
