@@ -29,7 +29,7 @@
           {% for research_entry in research_entry_group.items | offset:iteration limit:3 %}
               <div class="col-lg-3 pb-5">
                 {% if research_entry.image != nil %}
-                    <img src="{{research_entry.image | prepend: site.url }}" class="img-fluid img-left rounded">
+                    <img alt="Research teaser" src="{{research_entry.image | prepend: site.url }}" class="img-fluid img-left rounded">
                   {% endif %}
               </div>
               <div class="col-lg-9 pl-5">

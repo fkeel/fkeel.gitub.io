@@ -1,7 +1,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="{{site.data.website.meta.description}}">
+    <meta name="description" content="{{site.data.website.meta.description | truncate: 160 }}">
     <meta name="keywords" content="{{site.data.website.meta.keywords}}">
     <meta name="author" content="{{site.data.website.meta.author}}">
     {% if page.title %}
@@ -17,4 +17,7 @@
     <link type="text/css" href="../assets/css/theme_customized.css" rel="stylesheet">
     <!-- Demo CSS - No need to use these in your project -->
     <!-- <link type="text/css" href="../assets/css/demo.css" rel="stylesheet"> -->
+
+    <!-- icon for touch devices -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/favicon/apple-touch-icon.png">
   </head>
