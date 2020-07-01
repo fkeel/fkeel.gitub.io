@@ -1,4 +1,4 @@
-/* 
+/*
 
 Add your custom styles below
 
@@ -8,6 +8,12 @@ html {
   // font-family: 'Montserrat Alternates', sans-serif;
 }
 
+.card-pricing.popular-tertiary {
+  border: 3px solid theme-color("tertiary") !important;
+}
+.card-pricing.popular-secondary {
+  border: 3px solid theme-color("secondary") !important;
+}
 
 .fullscreen-bg {
     position: fixed;

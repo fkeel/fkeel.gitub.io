@@ -1,18 +1,18 @@
 // Theme variables
 
-@import "_variables.scss"; 
+@import "_variables.scss";
 
 
 // User's custom variables
 
-@import "_custom-variables.scss"; 
- 
+@import "_custom-variables.scss";
 
-// Bootstrap variables and functions 
+
+// Bootstrap variables and functions
 
 @import "bootstrap/functions";
 @import "bootstrap/variables";
-@import "bootstrap/mixins";  
+@import "bootstrap/mixins";
 
 
 // Overriden mixins
@@ -21,7 +21,7 @@
 @import "mixins/_background-variant.scss";
 @import "mixins/_forms.scss";
 @import "mixins/_modals.scss";
-@import "mixins/_popover.scss"; 
+@import "mixins/_popover.scss";
 
 
 // Bootstrap components
@@ -30,9 +30,9 @@
 @import "bootstrap/reboot";
 @import "bootstrap/type";
 @import "bootstrap/images";
-@import "bootstrap/code"; 
+@import "bootstrap/code";
 @import "bootstrap/grid";
-@import "bootstrap/tables"; 
+@import "bootstrap/tables";
 @import "bootstrap/forms";
 @import "bootstrap/buttons";
 @import "bootstrap/transitions";
@@ -62,7 +62,7 @@
 
 // Theme styles
 
-@import "_reboot.scss"; 
+@import "_reboot.scss";
 @import "_global.scss";
 @import "_utilities.scss";
 @import "_components.scss";

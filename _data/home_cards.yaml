@@ -1,0 +1,13 @@
+right_bottom:
+  title: Bio
+  description: |
+    I have PhD in “Datalogi” from the University of Copenhagen, a MSc in Computer Science from Queen’s University, Canada and a BA in Philosophy of Technology from University College Maastricht
+  url: /bio
+  url_text: View Bio
+
+right_top:
+  title: Research
+  description: |
+    I am interested in human perception and computer sensing. I believe that a solid understanding of perceptive actions will allow us to design new experiences and access to the world.
+  url: /research
+  url_text: View Research
