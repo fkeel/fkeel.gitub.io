@@ -1,4 +1,4 @@
-/* 
+/*
 
 Copy and paste the variables that you want to modify from _variables.scss. The default ones will be overridden.
 
@@ -3373,7 +3373,7 @@ tbody.collapse.show {
 .badge-pill {
   padding-right: 0.65em;
   padding-left: 0.65em;
-  border-radius: 10rem; }
+  border-radius: 0.2rem; }
 
 .badge-primary {
   color: #fff;
@@ -10558,6 +10558,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 Add your custom styles below
 
 */
+body {
+  padding-top: 94px; }
+
 .card-pricing.popular-tertiary {
   border: 3px solid #192b3f !important; }
 

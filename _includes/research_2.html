@@ -1,0 +1,67 @@
+
+    {% assign research_data = site.data.research | group_by: 'year' %}
+    {% for research_entry_group in research_data %}
+      {% assign group_size = research_entry_group.size %}
+      {% assign grid_size = 3 %}
+      {% assign max_iterations = group_size | divided_by: grid_size | ceil %}
+<section class="slice slice-lg pb-0">
+      <div class="row" >
+        <div class="col-12">
+          <div class="mb-2 text-left">
+              {% assign name = research_entry_group.name %}
+              {% if name == "" %}
+                {% comment %}
+                  {% assign name = "Other" %}
+                {% endcomment %}
+                {% break %}
+              {% endif %}
+              <h3 class="heading h2">{{name}}</h3>
+              {% comment %}
+                <!-- <div class="fluid-paragraph text-center">
+                  <p class="lead mb-0">Daily insights from our company</p>
+                </div> -->
+              {% endcomment %}
+            </div>
+        </div>
+      </div>
+      {% for iteration in (0..(max_iterations-1)) %}
+          <div class="row cols-md-space cols-sm-space cols-xs-space">
+          {% for research_entry in research_entry_group.items | offset:iteration limit:3 %}
+              <div class="col-lg-4">
+                <div class="card border-0">
+                  {% if research_entry.image != nil %}
+                    <img src="{{research_entry.image | prepend: site.url }}" class="img-fluid img-center rounded z-depth-2">
+                  {% endif %}
+                  <div class="pt-4">
+                    {% for tag in research_entry.tags %}
+                      {% assign style = tag.style %}
+                      {% assign tag_style = site.data.website.tag_styles | where: "name",style | limit:1 %}
+                      <span class="badge badge-lg badge-pill {{ tag_style[0].css }} text-uppercase mb-1">{{tag.text}}</span>
+                      <!-- <span class="text-muted">[ {{tag.text}} ]</span> -->
+                    {% endfor%}
+                    <h4>{{research_entry.title}}</h4>
+
+                     <p class="mt-3">
+                      <i>{{research_entry.authors}} in {{research_entry.venue}}</i>
+                    </p>
+                    <p class="mt-3">
+                      {{research_entry.description}}
+                    </p>
+                    Links:
+                    {% for link in research_entry.links %}
+                      <a href="{{link.url | prepend: site.url }}">
+                        <span class="badge badge-lg badge-pill badge-secondary text-uppercase mb-1">
+                          {{link.name}}
+                        </span>
+                      </a>
+                    {% endfor%}
+                  </div>
+                </div>
+              </div>
+          {% endfor %}
+          </div>
+        </section>
+
+      {% endfor %}
+    {% endfor %}
+  <!-- </section> -->

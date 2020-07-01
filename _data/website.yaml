@@ -1,7 +1,7 @@
 # Developer comment:
 #   This file contains settings and minor data entries for the website
-#   
-#   base_title – default web page title (shown in web search and tab name) 
+#
+#   base_title – default web page title (shown in web search and tab name)
 #     Title format: [base_title] | [page_title (if present)]
 #   current_year – used for footer copyright
 #   meta – SEO tags
@@ -18,7 +18,7 @@ meta:
 
 # Developer comment:
 #   Change the corresponding *.html file name in root folder after editing the menu url shortcut
-#   For instance: 
+#   For instance:
 #   '/research' url will open 'reseach.html' page and will be displayed in the browser as http://[website_url]/research
 menu:
   - title: Home
@@ -35,12 +35,18 @@ contact:
   # address: Human Centred Computing, 128-132 Njalsgade, Building 24, 5. floor DK-2300 Copenhagen S
   github: https://github.com/fkeel
   # facebook:
-  # instagram: 
+  # instagram:
 
 tag_styles:
-  - name: default
+  - name: blue
     css: "badge-primary"
-  - name: secondary
-    css: "badge-secondary"
-  - name: tertiary
+  - name: dark
     css: "badge-tertiary"
+  - name: green
+    css: "badge-success"
+  - name: red
+    css: "badge-danger"
+  - name: orange
+    css: "badge-warning"
+  - name: cyan
+    css: "badge-info"
