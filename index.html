@@ -5,8 +5,9 @@ layout: index
 <section class="slice">
     <div class="row">
     <div class="col-lg-6 col-md-10">
-       {% assign card = site.data.home_cards.left_top %}
+      {% assign card = site.data.home_cards.left_top %}
       <h3 class="mb-4">{{ card.title }}</h3>
+
       {% assign home_updates = site.data.updates %}
       {% for data in home_updates limit:4 %}
       <div class="card card-pricing mb-5 popular-secondary">
