@@ -10561,6 +10561,9 @@ Add your custom styles below
 body {
   padding-top: 94px; }
 
+a.nav-link.bg-white:hover {
+  background-color: white !important; }
+
 .card-pricing.popular-tertiary {
   border: 3px solid #192b3f !important; }
 

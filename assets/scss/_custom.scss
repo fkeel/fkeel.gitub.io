@@ -4,12 +4,19 @@ Add your custom styles below
 
 */
 
-html {
-  // font-family: 'Montserrat Alternates', sans-serif;
-}
-
 body {
   padding-top: 94px;
+}
+
+a.nav-link.bg-white:hover {
+  background-color: white !important;
+}
+
+.k-subheader {
+  // font-family: 'Montserrat Alternates', sans-serif !important;
+}
+.k-subheader-alt {
+  // font-family: 'Ubuntu', sans-serif !important;
 }
 
 .card-pricing.popular-tertiary {

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Teaching
-subtitle: Studying Sensing, Perception, and Action in Computers and Humans
+active_menu_title: "Teaching"
 ---
 
 <section class="slice">
@@ -12,7 +12,7 @@ subtitle: Studying Sensing, Perception, and Action in Computers and Humans
       {% for data in site.data.teaching.courses.list %}
       <div class="card card-pricing mb-5 popular-secondary">
           <div class="card-body">
-              <h5 class="heading heading-5 strong-600 mb-4">{{ data.title }}</h5>
+              <h5 class="heading heading-5 strong-600 mb-4 k-subheader">{{ data.title }}</h5>
               <h6 class="text-muted">{{ data.year }}</h6>
               <p class="card-text">{{ data.description }}</p>
           </div>
@@ -24,7 +24,7 @@ subtitle: Studying Sensing, Perception, and Action in Computers and Humans
       {% for data in site.data.teaching.workshops.list %}
       <div class="card card-pricing mb-5 popular-secondary">
           <div class="card-body">
-              <h5 class="heading heading-5 strong-600 mb-4">{{ data.title }}</h5>
+              <h5 class="heading heading-5 strong-600 mb-4 k-subheader">{{ data.title }}</h5>
               <h6 class="text-muted">{{ data.year }}</h6>
               <p class="card-text">{{ data.description }}</p>
           </div>
@@ -38,7 +38,7 @@ subtitle: Studying Sensing, Perception, and Action in Computers and Humans
       {% for data in site.data.teaching.conference_workshops.list %}
       <div class="card card-pricing mb-5 popular-secondary">
           <div class="card-body">
-              <h5 class="heading heading-5 strong-600 mb-4">{{ data.title }}</h5>
+              <h5 class="heading heading-5 strong-600 mb-4 k-subheader">{{ data.title }}</h5>
               <h6 class="text-muted">{{ data.year }} {{ data.authors }}</h6>
               <p class="card-text">{{ data.venue }}</p>
           </div>

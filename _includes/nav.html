@@ -9,7 +9,11 @@
         <h6 class="dropdown-header font-weight-600 d-lg-none px-0">Menu</h6>
         {% for menu_item in site.data.website.menu %}
           <li class="nav-item">
-            <a class="nav-link" href="{{ menu_item.url }}">{{ menu_item.title }}</a>
+            {% if page.active_menu_title == menu_item.title %}
+              <a class="nav-link bg-white" href="{{ menu_item.url }}">{{ menu_item.title }}</span></a>
+            {% else %}
+              <a class="nav-link" href="{{ menu_item.url }}">{{ menu_item.title }}</span></a>
+            {% endif %}
           </li>
         {% endfor %}
         <div class="dropdown-divider d-lg-none my-4"></div>
