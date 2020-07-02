@@ -4,59 +4,63 @@ title: Bio
 subtitle: Studying Sensing, Perception, and Action in Computers and Humans
 ---
 <section class="slice slice-lg">
-
-<div>
-   <h3>Formal Education</h3>
-<ul>
-<li>PhD Fellow at the University of Copenhagen, Denmark (as of August 2015)</li>
-<li>Visiting Researcher at the Responsive Environments group of the MIT Media Lab (Winter 2017)</li>
-<li>MSc from Queen’s University in Canada (2013-2015)</li>
-<li>BA (Hons.) from University College Maastricht, Maastricht University, The Netherlands (2009 – 2013)</li>
-</ul>
-<p>&nbsp;</p>
-<h3>Skills</h3>
-<p><strong>Physical Computing</strong><br>
-I am fascinated by physical interactive objects. I got involved in Human Computer interaction through interactive robotic art and have since used this fascination to explore diverse topics such as tangible multi-device ecologies, wearables sensors and flexible computers.</p>
-<p><strong>Experimental Studies of Human Behavior and Perception</strong><br>
-I am interested in how such interactive objects change human perception and behavior. I have therefore set up multiple behavior and psychophysics experiments.</p>
-<p><strong>Custom and Novel Sensor Solutions</strong><br>
-I think of sensors as a design material, rather than as something used to augment a ‘dumb’ object. I have designed countless custom inertial, infrared, capacitive and resistive sensing solutions.</p>
-<p><strong>Soft Circuits &amp;&nbsp;<span>Flexible PCBs</span></strong><br>
-My interests in sensor design and wearable computing have led me to investigate how sensors can be integrated into fabric and how fabric itself can be used to create functional electronic textiles. Together with colleagues at the Human Media Lab at Queen’s University I developed my own workflow for designing and manufacturing flexible circuits. By building (and breaking) flexible and elastic circuits, I have an intuitive grasp of their opportunities and constraints.</p>
-<p><strong>Haptic Feedback Design</strong><br>
-My current research is focused on improving our understanding of haptic perception and learning how to design for it. With my work, I hope to demonstrate how great the untapped potential of this perceptual channel is.</p>
-<h3>Research Experience</h3>
-<p><strong>As of August 2015 </strong>PhD Fellow at the University of Copenhagen’s Human Centred Computing group, Denmark (Body-Based UI)<strong><br>
-Winter 2017/18</strong>&nbsp;Design and Implementation of micro-gravity robotics experiment for the Media Lab Space Initiative<br>
-<strong>2013 –2015</strong> Research Assistant at the Human Media Lab, Queen’s University, Canada (research into wearable, pose-aware technologies)<br>
-<strong>2012 –2014</strong> Research Coordinator, Cybermedic, Paris/London (research into bio-compatible battery technologies for body modifications)<br>
-<strong>2011</strong> Research Fellow at the Human Media Lab, Queen’s University, Canada (prototyping of multi-display interaction environments)<br>
-<strong>2010 – 2011</strong> Undergraduate Researcher at Department of Knowledge Engineering, University Maastricht, The Netherlands (research into human robot interaction)</p>
-<h3>Invited Talks</h3>
-<p>2018<br>
-Guest Talk at the HCI Group Saarbruecken: Textiles/Space/Touch, Saarbruecken, Germany</p>
-<p>2017<br>
-Guest Talk for the HCI Sorbonne group on Coupling Motion and Perception for Haptic Interfaces, Paris, France</p>
-<p>2016<br>
-Guest Talk at NYU Shanghai on Designing for the Moving Body, Shanghai, China<br>
-Talk at Maker Carnival Shanghai on Body Based User Interfaces, Shanghai, China<br>
-Talk at Zhengzhou Highschool No2 on Education and Academia, Zengzhou, China<br>
-Talk at the ‘Second Generation and Start-Ups’ conference on Designing User Interfaces for the Body, Hongzhou, China<br>
-Guest Talk at ITU, Denmark on Body-UI and Sensory Expansion</p>
-<p><span>2014<br>
-</span>Global Entrepreneurship Week, Maastricht, The Netherlands</p>
-<p>2013<br>
-Presentation of PaperTab at IFP Media Center / Founders Forum, NYC, USA<br>
-Presentation of PaperTab at the World Technology Network, NYC, USA</p>
-<p>2012<br>
-Talk at the Avans Hogeschool on Crowdsourcing and Crowdfunding, Breda, The Netherlands</p>
-<h3>Academic Services</h3>
-<p>2019 – Program Comittee, Augmented Human<br>
-2018/19 – Program Committee, TEI<br>
-2016, 2017 – Poster Committee Member – ISS<br>
-2015, 2016 – Social Media Chair – TEI<br>
-Since ~ 2013 reviewer for CHI, TEI, MUM, Augmented Human, DIS, MobileHCI, NordiCHI,<br>
-CHI Play, Siggraph ASIA, ACE and others.</p>
+  <div class="row">
+    <div class="col-lg-12 col-md-9">
+      {% assign selection = site.data.bio.education %}
+      <div class="card card-pricing mb-5 popular-secondary">
+          <div class="card-body">
+            <h3 class="mb-4">{{ selection.title }}</h3>
+            {{ selection.content }}
+          </div>
+      </div>
+    </div>
   </div>
 
+  <div class="row">
+    <div class="col-lg-12 col-md-9">
+      {% assign selection = site.data.bio.skills %}
+      <div class="card card-pricing mb-5 popular-secondary">
+          <div class="card-body">
+            <h3 class="mb-4">{{ selection.title }}</h3>
+            {{ selection.content }}
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 col-md-9">
+      {% assign selection = site.data.bio.research_experience %}
+      <div class="card card-pricing mb-5 popular-secondary">
+          <div class="card-body">
+            <h3 class="mb-4">{{ selection.title }}</h3>
+            {{ selection.content }}
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 col-md-9">
+      {% assign selection = site.data.bio.talks %}
+      <div class="card card-pricing mb-5 popular-secondary">
+          <div class="card-body">
+            <h3 class="mb-4">{{ selection.title }}</h3>
+            {{ selection.content }}
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 col-md-9">
+      {% assign selection = site.data.bio.academic %}
+      <div class="card card-pricing mb-5 popular-secondary">
+          <div class="card-body">
+            <h3 class="mb-4">{{ selection.title }}</h3>
+            {{ selection.content }}
+          </div>
+      </div>
+    </div>
+  </div>
 </section>
