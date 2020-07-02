@@ -1,0 +1,21 @@
+---
+layout: index
+---
+
+<section class="slice">
+    <div class="row">
+    <div class="col-lg-9 col-md-9">
+      {% assign card = site.data.home_cards.left_top %}
+      <h3 class="mb-4">{{ card.title }}</h3>
+      {% assign home_updates = site.data.updates %}
+      {% for data in home_updates %}
+      <div class="card card-pricing mb-5 popular-secondary">
+          <div class="card-body">
+              <h5 class="heading heading-5 strong-600 mb-4">{{ data.date }}</h5>
+              <p class="card-text">{{ data.content }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -11,3 +11,17 @@ right_top:
     I am interested in human perception and computer sensing. I believe that a solid understanding of perceptive actions will allow us to design new experiences and access to the world.
   url: /research
   url_text: View Research
+
+left_bottom:
+  title: Previous
+  description: |
+    Interested in reading more? I've got you covered.
+  url: /updates
+  url_text: View Updates
+
+left_top:
+  title: Updates
+  # description: |
+  #   Interested in reading more? I've got you covered.
+  # url: /updates
+  # url_text: View Updates
