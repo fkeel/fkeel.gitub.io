@@ -7,7 +7,207 @@ Copy and paste the variables that you want to modify from _variables.scss. The d
 
 //$body-bg: #fff;
 
-$badge-pill-border-radius:          0.2rem;
+$custom-border-radius: 0.05rem;
 
-// $font-family-base: 'Open Sans', sans-serif;
-// $font-family-alt: 'Nunito', sans-serif;
+$badge-pill-border-radius: $custom-border-radius;
+$border-radius: $custom-border-radius;
+$input-border-radius: $custom-border-radius;
+
+
+// $primary:       #00458B;
+// $tertiary:      #3FD2C7;
+// $secondary:     #99DDFF;
+
+
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+$colors: ();
+$colors: map-merge((
+  "base1":      $base1,
+  "base2":      $base2,
+  "base3":      $base3,
+  "base0":      $base0,
+  "base00":      $base00,
+  "base01":      $base01,
+  "base02":      $base02,
+  "base03":      $base03,
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "magenta":    $magenta,
+  "violet":     $violet,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "light":      $gray-400,
+  "lighter":    $gray-200,
+  "lightest":    $gray-100,
+  "gray-dark":  $gray-800,
+), $colors);
+
+$theme-colors: ();
+$theme-colors: map-merge((
+  "primary":      $cyan,
+  "secondary":    $blue,
+  "tertiary":     $magenta,
+  "success":      $success,
+  "info":         $info,
+  "warning":      $warning,
+  "danger":       $danger,
+  "light":        $light,
+  "dark":         $dark,
+  "base1":      $base1,
+  "base2":      $base2,
+  "base3":      $base3,
+  "base0":      $base0,
+  "base00":      $base00,
+  "base01":      $base01,
+  "base02":      $base02,
+  "base03":      $base03,
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "magenta":    $magenta,
+  "violet":     $violet,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+), $theme-colors);
+
+$link-color:                $violet;
+$link-decoration:           none;
+$link-hover-color:          darken($link-color, 25%);
+$link-hover-decoration:     unone;
+
+$btn-border-radius:           $input-border-radius;
+$btn-border-radius-xl:        $input-border-radius;
+$btn-border-radius-lg:        $input-border-radius;
+$btn-border-radius-sm:        $input-border-radius;
+
+$nav-pills-border-radius:     $border-radius;
+$card-border-radius:          $border-radius;
+
+$input-border-radius:                   $border-radius;
+$input-border-radius-xl:                $border-radius;
+$input-border-radius-lg:                $border-radius;
+$input-border-radius-sm:                $border-radius;
+
+@mixin rebase($rebase03,$rebase02,$rebase01,$rebase00,$rebase0,$rebase1,$rebase2,$rebase3)
+{
+    background-color:$rebase03;
+    color:$rebase0;
+    * { color:$rebase0; }
+    h1,h2,h3,h4,h5,h6 { color:$rebase1; border-color: $rebase0; }
+    a, a:active, a:visited { color: $rebase1; }
+}
+@mixin accentize($accent) {
+    a, a:active, a:visited, code.url { color: $accent; }
+    h1,h2,h3,h4,h5,h6 {color:$accent}
+}
+/* light is default mode, so pair with general html definition */
+// .light { @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)}
+// .dark  { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)}
+
+
+
+
+
+// FONT background-size:
+// Fonts
+
+
+$font-family-base: 'Titillium Web', sans-serif;
+$font-family-alt: 'Titillium Web', sans-serif;
+
+$font-size-base:              1.05rem; // Assumes the browser default, typically `16px`
+$font-size-xl:                ($font-size-base * 1.5);
+$font-size-lg:                ($font-size-base * 1.25);
+$font-size-sm:                ($font-size-base * .875);
+$font-size-xs:                ($font-size-base * .75);
+
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            600;
+
+$font-weight-base:            $font-weight-normal;
+$line-height-base:            1.6;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+$headings-margin-bottom:      ($spacer / 2);
+$headings-font-family:        inherit;
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+$headings-color:              inherit;
+
+$headings-margin-bottom:      ($spacer / 2);
+$headings-font-family:        inherit;
+$headings-font-weight:        600;
+$headings-line-height:        1.3;
+$headings-color:              $gray-800;
+
+$display1-size:               6rem;
+$display2-size:               5.5rem;
+$display3-size:               4.5rem;
+$display4-size:               3.5rem;
+
+$display1-weight:             300;
+$display2-weight:             300;
+$display3-weight:             300;
+$display4-weight:             300;
+$display-line-height:         $headings-line-height;
+
+$lead-font-size:              ($font-size-base * 1.25);
+$lead-font-weight:            300;
+
+$small-font-size:             80%;
+
+$text-muted:                  $gray-500;
+
+$blockquote-small-color:      $gray-600;
+$blockquote-font-size:        ($font-size-base * 1.25);
+
+$hr-border-color:             rgba($black, .1);
+$hr-border-width:             $border-width;
+
+$mark-padding:                .2em;
+
+$dt-font-weight:              $font-weight-bold;
+
+$list-inline-padding:         .5rem;
+
+$mark-bg:                     #fcf8e3;
+
+$hr-margin-y:                 $spacer;

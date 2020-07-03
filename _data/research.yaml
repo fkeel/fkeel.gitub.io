@@ -20,7 +20,7 @@
   image: /uploads/image/2018_MotionMapping.jpg
   tags:
     - text: paper
-      style: dark
+      style: magenta
   links:
     - name: pdf
       url: /uploads/pdf/018_CHI_midAirTextures.pdf
@@ -35,7 +35,7 @@
   image: /uploads/image/2018_zPatch.jpg
   tags:
     - text: paper
-      style: dark
+      style: magenta
   links:
     - name: pdf
       url: /uploads/pdf/2018_TEI_zPatch.pdf
@@ -58,7 +58,7 @@
   image: /uploads/image/2017_IMWUT_EMSCalibration-700x732.jpg
   tags:
     - text: paper
-      style: dark
+      style: magenta
   links:
     - name: pdf
       url: /uploads/pdf/2017_IMWUT_EMSCalibration-287x300.jpg
@@ -71,7 +71,7 @@
   image: /uploads/image/2016_Reflex-350x350-m.jpg
   tags:
     - text: paper
-      style: dark
+      style: magenta
   links:
     - name: pdf
       url: /uploads/pdf/2015_TEI_DisplaySkin.pdf
@@ -84,7 +84,7 @@
   image: /uploads/image/2015_doodles-1-350-m.jpg
   tags:
     - text: poster/demo
-      style: cyan
+      style: yellow
   links:
     - name: pdf
       url: /uploads/pdf/2016_CHI_Doodles.pdf
@@ -99,7 +99,7 @@
   image: /uploads/image/2015_IR_Sensor_small-1-350-m.jpg
   tags:
     - text: poster/demo
-      style: cyan
+      style: yellow
   links:
     - name: pdf
       url: /uploads/pdf/015_AH_IRSensors.pdf
@@ -113,7 +113,7 @@
   venue: ACM Interactions Magazine
   tags:
     - text: commentary
-      style: cyan
+      style: yellow
   links:
     - name: pdf
       url: /uploads/pdf/2017_Interactions_SpecialTopic.pdf

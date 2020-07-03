@@ -5,6 +5,13 @@ right_bottom:
   url: /bio
   url_text: View Bio
 
+right_bottom_2:
+  title: Teaching
+  description: |
+    One sentence description of the teaching page may make sense here.
+  url: /teaching
+  url_text: View Teaching
+
 right_top:
   title: Research
   description: |

@@ -40,15 +40,17 @@ contact:
   # instagram:
 
 tag_styles:
-  - name: blue
-    css: "badge-primary"
-  - name: dark
-    css: "badge-tertiary"
   - name: green
-    css: "badge-success"
+    css: "badge-green"
   - name: red
-    css: "badge-danger"
+    css: "badge-red"
   - name: orange
-    css: "badge-warning"
+    css: "badge-orange"
+  - name: yellow
+    css: "badge-yellow"
   - name: cyan
-    css: "badge-info"
+    css: "badge-cyan"
+  - name: magenta
+    css: "badge-magenta"
+  - name: violet
+    css: "badge-violet"

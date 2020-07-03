@@ -4,7 +4,7 @@ courses:
   title: Courses
   list:
     - title: User Interface Technologies – University of Copenhagen
-      year: 2018, 2017
+      year: 2017-2018
       description: |
         <a href="http://studies.ku.dk/masters/computer-science/programme-structure/recommended_studytracks/hci/">User Interface Technologies (UIT)</a> is the hardware-focused Master level HCI course offered by the Department of Computer Science. I completely redesigned this course from bottom up. My personal aim of the course was for students to build a physical research prototype, learn how to position their own work relative to current research narratives, and communicate it effectively. In addition to the hardware-prototyping focus of the course, there is a strong emphasis on writing skills. Students work in groups of 3 – 4 on weekly assignments which build upon each other, culminating in a research paper and working demo.
 
@@ -29,16 +29,16 @@ workshops:
       year: 2014
       description: One day crash-course in hardware prototyping for the Global Entrepreneurship Week, Maastricht, The Netherlands
 
-    - title: Interactivity Workshop at Toy Studio Lernell
-      year: 2011
-      description: <a href="http://www.lernell.com/">Lernell</a> is a family run toy-design studio that, amongst other customers, designs toys for Disney. If Lernell add interactive features to their toys, these features are usually outsourced to engineering teams. Lernell felt that this process could be improved if they learned to understand interactive electronics better themselves. They hired me for an 8-hour Arduino crash-course.
-
     - title: Interactive Technology Workshops at Vienna Highschool (Kandlgasse)
       year: 2013
       description: |
         I taught two three-day workshops for high-school students. The first group of ~20 students was between 15 and 17. They were provided with basic tutorials on electronics and programming with Arduino. Consequently they built their own inventions, for example, gloved-input devices, musical clothing and simple robots.
         The second course was taught to a group of about ~20 students aged 11 to 13. These students also received a basic tutorial on electronics and programming Arduino, but then followed step-by step instructions to build their own light-phobic or light-attracted robot.
         These workshops were both super challenging and super rewarding on many levels – it’s a beautiful experience to see young people learn that they can enjoy learning.
+
+    - title: Interactivity Workshop at Toy Studio Lernell
+      year: 2011
+      description: <a href="http://www.lernell.com/">Lernell</a> is a family run toy-design studio that, amongst other customers, designs toys for Disney. If Lernell add interactive features to their toys, these features are usually outsourced to engineering teams. Lernell felt that this process could be improved if they learned to understand interactive electronics better themselves. They hired me for an 8-hour Arduino crash-course.
 
 conference_workshops:
   title: Conference Workshops

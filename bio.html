@@ -2,14 +2,18 @@
 layout: page
 title: Bio
 active_menu_title: "Bio"
+nav-bg: bg-base03
 ---
 <section class="slice slice-lg">
   <div class="row">
     <div class="col-lg-12 col-md-9">
+      {% assign card_list = site.data.teaching.courses %}
+      <h3 class="mb-4"><span class="k-border-cyan">Bio</span></h3>
+
       {% assign selection = site.data.bio.education %}
-      <div class="card card-pricing mb-5 popular-secondary">
+      <div class="card card-pricing mb-5 border-0 bg-lightest">
           <div class="card-body">
-            <h3 class="mb-4 k-subheader">{{ selection.title }}</h3>
+            <h5 class="mb-4 k-subheader">{{ selection.title }}</h5>
             {{ selection.content }}
           </div>
       </div>
@@ -19,9 +23,9 @@ active_menu_title: "Bio"
   <div class="row">
     <div class="col-lg-12 col-md-9">
       {% assign selection = site.data.bio.skills %}
-      <div class="card card-pricing mb-5 popular-secondary">
+      <div class="card card-pricing mb-5 border-0 bg-lightest">
           <div class="card-body">
-            <h3 class="mb-4 k-subheader">{{ selection.title }}</h3>
+            <h5 class="mb-4 k-subheader">{{ selection.title }}</h5>
             {{ selection.content }}
           </div>
       </div>
@@ -31,9 +35,9 @@ active_menu_title: "Bio"
   <div class="row">
     <div class="col-lg-12 col-md-9">
       {% assign selection = site.data.bio.research_experience %}
-      <div class="card card-pricing mb-5 popular-secondary">
+      <div class="card card-pricing mb-5 border-0 bg-lightest">
           <div class="card-body">
-            <h3 class="mb-4 k-subheader">{{ selection.title }}</h3>
+            <h5 class="mb-4 k-subheader">{{ selection.title }}</h5>
             {{ selection.content }}
           </div>
       </div>
@@ -43,9 +47,9 @@ active_menu_title: "Bio"
   <div class="row">
     <div class="col-lg-12 col-md-9">
       {% assign selection = site.data.bio.talks %}
-      <div class="card card-pricing mb-5 popular-secondary">
+      <div class="card card-pricing mb-5 border-0 bg-lightest">
           <div class="card-body">
-            <h3 class="mb-4 k-subheader">{{ selection.title }}</h3>
+            <h5 class="mb-4 k-subheader">{{ selection.title }}</h5>
             {{ selection.content }}
           </div>
       </div>
@@ -55,9 +59,9 @@ active_menu_title: "Bio"
   <div class="row">
     <div class="col-lg-12 col-md-9">
       {% assign selection = site.data.bio.academic %}
-      <div class="card card-pricing mb-5 popular-secondary">
+      <div class="card card-pricing mb-5 border-0 bg-lightest">
           <div class="card-body">
-            <h3 class="mb-4 k-subheader">{{ selection.title }}</h3>
+            <h5 class="mb-4 k-subheader">{{ selection.title }}</h5>
             {{ selection.content }}
           </div>
       </div>
