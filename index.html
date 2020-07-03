@@ -7,7 +7,7 @@ active_menu_title: "Home"
     <div class="row">
     <div class="col-lg-6 col-md-10">
       {% assign card = site.data.home_cards.left_top %}
-      <h3 class="mb-4 k-subheader"><span class="k-border-blue">{{ card.title }}</span></h3>
+      <h3 class="mb-4 k-subheader "><span class="k-border-blue">{{ card.title }}</span></h3>
 
       {% assign home_updates = site.data.updates %}
       {% for data in home_updates limit:4 %}
@@ -24,46 +24,46 @@ active_menu_title: "Home"
           <div class="card-body">
               <h5 class="heading heading-5 strong-600 mb-4">{{ card.title }}</h5>
               <p class="card-text">{{ card.description }}</p>
-              <a href="{{ card.url }}" class="btn btn-yellow mt-2" style="border: 0;">{{ card.url_text }}</a>
+              <a href="{{ card.url }}" class="btn btn-yellow mt-2" style="">{{ card.url_text }}</a>
           </div>
         </div>
     </div>
 
     <div class="col-lg-6 col-md-10">
-      <div class="card card-pricing px-4 border-0 bg-cyan-ll py-4  mb-5">
+      <div class="card card-pricing px-4 border-0 bg-cyan-l py-4  mb-5">
       <!-- <div class="card card-pricing px-4 border-0 py-4 mb-5 bg-pink"> -->
         {% assign card = site.data.home_cards.right_top %}
-        <p class="text-white h3" style="position: absolute; right: 20px; top: 15px; opacity: 1;"><i class="fa fa-flask" aria-hidden="true"></i></p>
+        <p class="h3" style="position: absolute; right: 20px; top: 15px; opacity: 0.5; color: white;"><i class="fa fa-flask" aria-hidden="true"></i></p>
         <h3 class="mb-1 pl-4 mt-3 k-subheader ">{{ card.title }}</h3>
         <div class="card-body">
             <h5 class="heading heading-5 strong-600"></h5>
             <p class="card-text">{{ card.description }}</p>
-            <a href="{{ card.url }}" class="btn btn-cyan mt-2" style="border: 0;">{{ card.url_text }}</a>
+            <a href="{{ card.url }}" class="btn btn-cyan mt-2">{{ card.url_text }}</a>
         </div>
       </div>
 
       <!-- <h3 class="mb-4">Bio</h3> -->
-      <div class="card card-pricing px-4 py-4 border-0 bg-orange-ll  mb-5">
+      <div class="card card-pricing px-4 py-4 border-0 bg-orange-l mb-5">
       <!-- <div class="card card-pricing px-4 py-4 border-0  mb-5 bg-blue"> -->
         {% assign card = site.data.home_cards.right_bottom %}
-      <p class="text-white h3" style="position: absolute; right: 20px; top: 15px; opacity: 1;"><i class="fa fa-address-card" aria-hidden="true"></i></p>
+      <p class="h3" style="position: absolute; right: 20px; top: 15px; opacity: 0.5; color: white;"><i class="fa fa-address-card" aria-hidden="true"></i></p>
         <h3 class="mb-1 pl-4 mt-3 k-subheader ">{{ card.title }}</h3>
         <div class="card-body">
             <h5 class="heading heading-5 strong-600"></h5>
             <p class="card-text">{{ card.description }}</p>
-            <a href="{{ card.url }}" class="btn btn-orange mt-2" style="border: 0;">{{ card.url_text }}</a>
+            <a href="{{ card.url }}" class="btn btn-orange mt-2" style="">{{ card.url_text }}</a>
         </div>
       </div>
 
-      <div class="card card-pricing px-4 py-4 border-0 bg-green-ll  mb-5">
+      <div class="card card-pricing px-4 py-4 border-0 bg-green-l mb-5">
       <!-- <div class="card card-pricing px-4 py-4 border-0  mb-5 bg-blue"> -->
         {% assign card = site.data.home_cards.right_bottom_2 %}
-        <p class="text-white h3" style="position: absolute; right: 20px; top: 15px; opacity: 1;"><i class="fa fa-book" aria-hidden="true"></i></p>
-        <h3 class="mb-1 pl-4 mt-3 k-subheader ">{{ card.title }}</h3>
+        <p class="h3" style="position: absolute; right: 20px; top: 15px; opacity: 0.5; color: white;"><i class="fa fa-book" aria-hidden="true"></i></p>
+        <h3 class="mb-1 pl-4 mt-3 k-subheader">{{ card.title }}</h3>
         <div class="card-body">
             <h5 class="heading heading-5 strong-600"></h5>
             <p class="card-text">{{ card.description }}</p>
-            <a href="{{ card.url }}" class="btn btn-green mt-2" style="border: 0;">{{ card.url_text }}</a>
+            <a href="{{ card.url }}" class="btn btn-green mt-2" style="">{{ card.url_text }}</a>
         </div>
       </div>
     </div>
