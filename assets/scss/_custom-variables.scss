@@ -99,6 +99,22 @@ $theme-colors: map-merge((
   "cyan":       $cyan,
   "white":      $white,
   "gray":       $gray-600,
+  "blue-l":     rgba($blue, 25%),
+  "violet-l":     rgba($violet, 25%),
+  "yellow-l":     rgba($yellow, 25%),
+  "magenta-l":     rgba($magenta, 25%),
+  "red-l":     rgba($red, 25%),
+  "orange-l":     rgba($orange, 25%),
+  "green-l":     rgba($green, 25%),
+  "cyan-l":     rgba($cyan, 25%),
+  "blue-ll":     rgba($blue, 12.5%),
+  "violet-ll":     rgba($violet, 12.5%),
+  "yellow-ll":     rgba($yellow, 12.5%),
+  "magenta-ll":     rgba($magenta, 12.5%),
+  "red-ll":     rgba($red, 12.5%),
+  "orange-ll":     rgba($orange, 12.5%),
+  "green-ll":     rgba($green, 12.5%),
+  "cyan-ll":     rgba($cyan, 12.5%),
 ), $theme-colors);
 
 $link-color:                $violet;

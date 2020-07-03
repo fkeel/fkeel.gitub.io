@@ -20,20 +20,20 @@ active_menu_title: "Home"
       {% endfor %}
 
       {% assign card = site.data.home_cards.left_bottom %}
-      <div class="card card-pricing mb-5 border-0 bg-white">
+      <div class="card card-pricing mb-5 border-0 bg-lightest">
           <div class="card-body">
               <h5 class="heading heading-5 strong-600 mb-4">{{ card.title }}</h5>
               <p class="card-text">{{ card.description }}</p>
-              <a href="{{ card.url }}" class="btn btn-yellow mt-2" style="border: 0;">{{ card.url_text }}</a>
+              <a href="{{ card.url }}" class="btn btn-violet mt-2" style="border: 0;">{{ card.url_text }}</a>
           </div>
         </div>
     </div>
 
     <div class="col-lg-6 col-md-10">
-      <div class="card card-pricing px-4 border-0 bg-lightest py-4  mb-5">
+      <div class="card card-pricing px-4 border-0 bg-cyan-ll py-4  mb-5">
       <!-- <div class="card card-pricing px-4 border-0 py-4 mb-5 bg-pink"> -->
         {% assign card = site.data.home_cards.right_top %}
-        <p class="text-muted h3" style="position: absolute; right: 20px; top: 15px; opacity: 0.2;"><i class="fa fa-flask" aria-hidden="true"></i></p>
+        <p class="text-white h3" style="position: absolute; right: 20px; top: 15px; opacity: 0.5;"><i class="fa fa-flask" aria-hidden="true"></i></p>
         <h3 class="mb-1 pl-4 mt-3 k-subheader ">{{ card.title }}</h3>
         <div class="card-body">
             <h5 class="heading heading-5 strong-600"></h5>
@@ -43,10 +43,10 @@ active_menu_title: "Home"
       </div>
 
       <!-- <h3 class="mb-4">Bio</h3> -->
-      <div class="card card-pricing px-4 py-4 border-0 bg-lightest  mb-5">
+      <div class="card card-pricing px-4 py-4 border-0 bg-orange-ll  mb-5">
       <!-- <div class="card card-pricing px-4 py-4 border-0  mb-5 bg-blue"> -->
         {% assign card = site.data.home_cards.right_bottom %}
-      <p class="text-muted h3" style="position: absolute; right: 20px; top: 15px; opacity: 0.2;"><i class="fa fa-address-card" aria-hidden="true"></i></p>
+      <p class="text-white h3" style="position: absolute; right: 20px; top: 15px; opacity: 0.5;"><i class="fa fa-address-card" aria-hidden="true"></i></p>
         <h3 class="mb-1 pl-4 mt-3 k-subheader ">{{ card.title }}</h3>
         <div class="card-body">
             <h5 class="heading heading-5 strong-600"></h5>
@@ -55,10 +55,10 @@ active_menu_title: "Home"
         </div>
       </div>
 
-      <div class="card card-pricing px-4 py-4 border-0 bg-lightest  mb-5">
+      <div class="card card-pricing px-4 py-4 border-0 bg-green-ll  mb-5">
       <!-- <div class="card card-pricing px-4 py-4 border-0  mb-5 bg-blue"> -->
         {% assign card = site.data.home_cards.right_bottom_2 %}
-        <p class="text-muted h3" style="position: absolute; right: 20px; top: 15px; opacity: 0.2;"><i class="fa fa-book" aria-hidden="true"></i></p>
+        <p class="text-white h3" style="position: absolute; right: 20px; top: 15px; opacity: 0.5;"><i class="fa fa-book" aria-hidden="true"></i></p>
         <h3 class="mb-1 pl-4 mt-3 k-subheader ">{{ card.title }}</h3>
         <div class="card-body">
             <h5 class="heading heading-5 strong-600"></h5>
