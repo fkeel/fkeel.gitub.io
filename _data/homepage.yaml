@@ -11,7 +11,7 @@ updates:
   cutoff: 200 #how many words to show for each update
   read_more:
     title: More
-    description: Interested in reading more? I've got you covered.
+    description: 
     url: /updates
     url_text: View Updates
 
