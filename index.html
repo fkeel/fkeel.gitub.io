@@ -5,7 +5,7 @@ active_menu_title: "Home"
 
 <section class="slice">
   <div class="row ">
-    <div class="px-0 py-0 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+    <div class="px-0 py-0 col-xl-4 col-lg-6 col-md-6 col-sm-12">
       <img src="{{ site.data.homepage.about.image }}" class="px-0 py-0 w-100 img-fluid img-left"/ style="display: inline-flex;">
 
       <div class="card card-pricing mt-4 mb-2 border-0 bg-lightest">
@@ -16,7 +16,7 @@ active_menu_title: "Home"
       </div>
     </div>
 
-    <div class="col-xl-5 col-lg-6 col-md-6">
+    <div class="col-xl-6 col-lg-6 col-md-6">
       {% assign home_updates = site.data.updates %}
       {% assign limit_count = site.data.homepage.updates.count %}
       {% assign limit_words = site.data.homepage.updates.cutoff %}
@@ -40,7 +40,7 @@ active_menu_title: "Home"
         </div>
     </div>
 
-    <div class="col-xl-4 col-lg-12 col-md-12">
+    <div class="col-xl-2 col-lg-12 col-md-12">
       {% assign card = site.data.homepage.cards.one %}
       {% if card.visible == true %}
       <div class="card card-pricing border-0 bg-cyan-ll py-0  mb-4">
