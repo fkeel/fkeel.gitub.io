@@ -3,12 +3,12 @@ about:
   image: /uploads/image/2016_Reflex-350x350-m.jpg
   title: About
   description: |
-    My name is Paul and this is my website. Posuere facilisi suspendisse sem non sed phasellus hac vehicula, eget torquent sapien justo morbi vel convallis porttitor, luctus urna nunc imperdiet lacinia ullamcorper aliquet.
+    My name is Paul and this is my website. luctus urna nunc imperdiet lacinia ullamcorper aliquet.
 
 # middle column
 updates:
   count: 3 #how many updates to show
-  cutoff: 45 #how many words to show for each update
+  cutoff: 200 #how many words to show for each update
   read_more:
     title: Previous
     description: Interested in reading more? I've got you covered.
