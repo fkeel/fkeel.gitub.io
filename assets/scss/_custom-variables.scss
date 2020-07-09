@@ -9,11 +9,6 @@ Copy and paste the variables that you want to modify from _variables.scss. The d
 // ====================================
 // Screen settings
 
-// Container width override for XL screen
-@media only screen and (min-width : 1200px) {
-    .container { max-width: 1360px; }
-}
-
 // ====================================
 // Website colors
 

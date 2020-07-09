@@ -8,6 +8,11 @@ Add your custom styles below
 
 @import "_custom-variables.scss";
 
+// Container width override for XL screen
+@media only screen and (min-width : 1200px) {
+    .container { max-width: 1360px; }
+}
+
 html * {
   color-profile: sRGB;
   rendering-intent: auto;
