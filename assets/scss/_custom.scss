@@ -4,6 +4,8 @@ Add your custom styles below
 
 */
 
+@import "_custom-variables.scss";
+
 html * {
   color-profile: sRGB;
   rendering-intent: auto;
@@ -18,6 +20,17 @@ html * {
 
 body {
   padding-top: 94px;
+
+  // background-color: #ffffff;
+  // background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+  // background-color: #ffffff;
+
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+  background-color: white;
+  // background-image: repeating-linear-gradient(60deg, transparent, transparent 35px, theme-color("violet-ll") 35px, theme-color("violet-ll") 70px);
 }
 
 a.nav-link {
@@ -25,6 +38,15 @@ a.nav-link {
 }
 a.nav-link.bg-white:hover {
   background-color: white !important;
+}
+
+.navbar.navbar-translucent {
+  background-color: rgba(04,43,54,0.8) !important;
+}
+
+section.slice {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .k-subheader { }
@@ -61,6 +83,41 @@ a.nav-link.bg-white:hover {
 .k-border-violet {
   background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba($violet, 70%) 60%);
 }
+
+
+.bg-lightest {
+  background: linear-gradient(rgba(0,0,0,0.015), white);
+}
+
+.bg-cyan-ll {
+  background: linear-gradient(theme-color("cyan-l"), theme-color("cyan-ll") 80%);
+}
+
+.bg-orange-ll {
+  background: linear-gradient(theme-color("orange-l"), theme-color("orange-ll") 80%);
+}
+
+.bg-green-ll {
+  background: linear-gradient(theme-color("green-l"), theme-color("green-ll")80%);
+}
+
+.bg-magenta-ll {
+  background: linear-gradient(theme-color("magenta-l"), theme-color("magenta-ll")80%);
+}
+
+.bg-violet-ll {
+  background: linear-gradient(theme-color("violet-l"), theme-color("violet-ll")80%);
+}
+
+.bg-gray-ll {
+  background: linear-gradient(theme-color("gray-l"), theme-color("gray-ll")80%);
+}
+
+.bg-base02-ll {
+  background: linear-gradient(theme-color("base02-l"), theme-color("base02-ll")80%);
+}
+
+
 
 .fullscreen-bg {
     position: relative;

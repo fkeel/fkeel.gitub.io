@@ -1,0 +1,42 @@
+# left column
+about:
+  image: /uploads/image/2016_Reflex-350x350-m.jpg
+  title: About
+  description: |
+    My name is Paul and this is my website. Posuere facilisi suspendisse sem non sed phasellus hac vehicula, eget torquent sapien justo morbi vel convallis porttitor, luctus urna nunc imperdiet lacinia ullamcorper aliquet.
+
+# middle column
+updates:
+  count: 3 #how many updates to show
+  cutoff: 45 #how many words to show for each update
+  read_more:
+    title: Previous
+    description: Interested in reading more? I've got you covered.
+    url: /updates
+    url_text: View Updates
+
+# right column
+cards:
+  one:
+    title: Research
+    description: |
+      I am interested in human perception and computer sensing. I believe that a solid understanding of perceptive actions will allow us to design new experiences and access to the world.
+    url: /research
+    url_text: View Research
+    visible: true
+
+  two:
+    title: Bio
+    description: |
+      I have PhD in “Datalogi” from the University of Copenhagen, a MSc in Computer Science from Queen’s University, Canada and a BA in Philosophy of Technology from University College Maastricht
+    url: /bio
+    url_text: View Bio
+    visible: true
+
+  three:
+    title: Teaching
+    description: |
+      One sentence description of the teaching page may make sense here.
+    url: /teaching
+    url_text: View Teaching
+    visible: true

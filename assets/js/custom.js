@@ -14,7 +14,9 @@ $(document).ready(function() {
       // $(".navbar").addClass("navbar-light");
       // $(".navbar").removeClass("bg-dark");
       // $(".navbar").removeClass("navbar-dark");
+      // $(".navbar").addClass("navbar-translucent");
     } else {
+      // $(".navbar").removeClass("navbar-translucent");
       // $(".navbar").removeClass("bg-dark");
       // $(".navbar").addClass("navbar-transparent");
       // $(".navbar").removeClass("bg-light");

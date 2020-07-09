@@ -7,6 +7,10 @@ Copy and paste the variables that you want to modify from _variables.scss. The d
 
 //$body-bg: #fff;
 
+@media only screen and (min-width : 1200px) {
+    .container { max-width: 1360px; }
+}
+
 $custom-border-radius: 0.05rem;
 
 $badge-pill-border-radius: $custom-border-radius;
@@ -99,6 +103,15 @@ $theme-colors: map-merge((
   "cyan":       $cyan,
   "white":      $white,
   "gray":       $gray-600,
+  "gray-l":     rgba($gray-600, 25%),
+  "gray-ll":     rgba($gray-600, 12.5%),
+  "gray-lll":     rgba($gray-600, 5%),
+  "base03-l":      rgba($base03, 25%),
+  "base03-ll":      rgba($base03, 12.5%),
+  "base03-lll":      rgba($base03, 5%),
+  "base02-l":      rgba($base02, 25%),
+  "base02-ll":      rgba($base02, 12.5%),
+  "base02-lll":      rgba($base02, 5%),
   "blue-l":     rgba($blue, 25%),
   "violet-l":     rgba($violet, 25%),
   "yellow-l":     rgba($yellow, 25%),
@@ -115,6 +128,22 @@ $theme-colors: map-merge((
   "orange-ll":     rgba($orange, 12.5%),
   "green-ll":     rgba($green, 12.5%),
   "cyan-ll":     rgba($cyan, 12.5%),
+  "blue-lll":     rgba($blue, 5%),
+  "violet-lll":     rgba($violet, 5%),
+  "yellow-lll":     rgba($yellow, 5%),
+  "magenta-lll":     rgba($magenta, 5%),
+  "red-lll":     rgba($red, 5%),
+  "orange-lll":     rgba($orange, 5%),
+  "green-lll":     rgba($green, 5%),
+  "cyan-lll":     rgba($cyan, 5%),
+  "blue-tl":     rgba($blue, 75%),
+  "violet-tl":     rgba($violet, 75%),
+  "yellow-tl":     rgba($yellow, 75%),
+  "magenta-tl":     rgba($magenta, 75%),
+  "red-tl":     rgba($red, 75%),
+  "orange-tl":     rgba($orange, 75%),
+  "green-tl":     rgba($green, 75%),
+  "cyan-tl":     rgba($cyan, 75%),
 ), $theme-colors);
 
 $link-color:                $violet;
@@ -227,3 +256,11 @@ $list-inline-padding:         .5rem;
 $mark-bg:                     #fcf8e3;
 
 $hr-margin-y:                 $spacer;
+
+
+
+$nav-link-padding-y:                .15rem;
+$nav-link-padding-x:                .75rem;
+
+// $navbar-padding-y:                  0rem;
+// $navbar-padding-x:                  0rem;

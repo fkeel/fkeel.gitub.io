@@ -4,68 +4,79 @@ active_menu_title: "Home"
 ---
 
 <section class="slice">
-    <div class="row">
-    <div class="col-lg-6 col-md-10">
-      {% assign card = site.data.home_cards.left_top %}
-      <h3 class="mb-4 k-subheader "><span class="k-border-blue">{{ card.title }}</span></h3>
+  <div class="row ">
+    <div class="px-0 py-0 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+      <img src="{{ site.data.homepage.about.image }}" class="px-0 py-0 w-100 img-fluid img-left"/ style="display: inline-flex;">
 
+      <div class="card card-pricing mt-4 mb-2 border-0 bg-lightest">
+        <div class="card-body">
+            <h5 class="heading heading-5 strong-600 mb-3">{{ site.data.homepage.about.title }}</h5>
+            <p class="card-text">{{ site.data.homepage.about.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-5 col-lg-6 col-md-6">
       {% assign home_updates = site.data.updates %}
-      {% for data in home_updates limit:4 %}
-      <div class="card card-pricing mb-5 border-0 bg-lightest">
+      {% assign limit_count = site.data.homepage.updates.count %}
+      {% assign limit_words = site.data.homepage.updates.cutoff %}
+
+      {% for data in home_updates limit:limit_count %}
+      <div class="card card-pricing mb-4 border-0 bg-lightest">
           <div class="card-body">
               <h5 class="heading heading-5 strong-600 mb-4">{{ data.date }}</h5>
-              <p class="card-text">{{ data.content }}</p>
+              <p class="card-text">{{ data.content | strip_html | truncatewords:limit_words }}</p>
           </div>
         </div>
       {% endfor %}
 
-      {% assign card = site.data.home_cards.left_bottom %}
-      <div class="card card-pricing mb-5 border-0">
+      {% assign card = site.data.homepage.updates.read_more %}
+      <div class="card card-pricing mb-4 border-0 bg-lightest">
           <div class="card-body">
               <h5 class="heading heading-5 strong-600 mb-4">{{ card.title }}</h5>
               <p class="card-text">{{ card.description }}</p>
-              <a href="{{ card.url }}" class="btn btn-yellow mt-2" style="">{{ card.url_text }}</a>
+              <a href="{{ card.url }}" class="btn btn-base01 mt-2 py-1" style="">{{ card.url_text }}</a>
           </div>
         </div>
     </div>
 
-    <div class="col-lg-6 col-md-10">
-      <div class="card card-pricing px-4 border-0 bg-cyan-l py-4  mb-5">
-      <!-- <div class="card card-pricing px-4 border-0 py-4 mb-5 bg-pink"> -->
-        {% assign card = site.data.home_cards.right_top %}
-        <p class="h3" style="position: absolute; right: 20px; top: 15px; opacity: 0.5; color: white;"><i class="fa fa-flask" aria-hidden="true"></i></p>
-        <h3 class="mb-1 pl-4 mt-3 k-subheader ">{{ card.title }}</h3>
-        <div class="card-body">
+    <div class="col-xl-4 col-lg-12 col-md-12">
+      {% assign card = site.data.homepage.cards.one %}
+      {% if card.visible == true %}
+      <div class="card card-pricing border-0 bg-cyan-ll py-0  mb-4">
+        <h5 class="mb-0 pl-4 mt-0 k-subheader bg-cyan text-white py-2 mx-0">{{ card.title }}</h5>
+        <div class="card-body pt-3">
             <h5 class="heading heading-5 strong-600"></h5>
-            <p class="card-text">{{ card.description }}</p>
-            <a href="{{ card.url }}" class="btn btn-cyan mt-2">{{ card.url_text }}</a>
+            <p class="card-text text">{{ card.description }}</p>
+            <a href="{{ card.url }}" class="btn btn-cyan-tl mt-2 py-1">{{ card.url_text }}</a>
         </div>
       </div>
+      {% endif %}
 
-      <!-- <h3 class="mb-4">Bio</h3> -->
-      <div class="card card-pricing px-4 py-4 border-0 bg-orange-l mb-5">
-      <!-- <div class="card card-pricing px-4 py-4 border-0  mb-5 bg-blue"> -->
-        {% assign card = site.data.home_cards.right_bottom %}
-      <p class="h3" style="position: absolute; right: 20px; top: 15px; opacity: 0.5; color: white;"><i class="fa fa-address-card" aria-hidden="true"></i></p>
-        <h3 class="mb-1 pl-4 mt-3 k-subheader ">{{ card.title }}</h3>
-        <div class="card-body">
-            <h5 class="heading heading-5 strong-600"></h5>
-            <p class="card-text">{{ card.description }}</p>
-            <a href="{{ card.url }}" class="btn btn-orange mt-2" style="">{{ card.url_text }}</a>
-        </div>
-      </div>
 
-      <div class="card card-pricing px-4 py-4 border-0 bg-green-l mb-5">
-      <!-- <div class="card card-pricing px-4 py-4 border-0  mb-5 bg-blue"> -->
-        {% assign card = site.data.home_cards.right_bottom_2 %}
-        <p class="h3" style="position: absolute; right: 20px; top: 15px; opacity: 0.5; color: white;"><i class="fa fa-book" aria-hidden="true"></i></p>
-        <h3 class="mb-1 pl-4 mt-3 k-subheader">{{ card.title }}</h3>
-        <div class="card-body">
+      {% assign card = site.data.homepage.cards.two %}
+      {% if card.visible == true %}
+      <div class="card card-pricing border-0 bg-magenta-ll mb-4">
+        <h5 class="mb-0 pl-4 k-subheader bg-magenta text-white py-2">{{ card.title }}</h5>
+        <div class="card-body pt-3">
             <h5 class="heading heading-5 strong-600"></h5>
-            <p class="card-text">{{ card.description }}</p>
-            <a href="{{ card.url }}" class="btn btn-green mt-2" style="">{{ card.url_text }}</a>
+            <p class="card-text text">{{ card.description }}</p>
+            <a href="{{ card.url }}" class="btn btn-magenta-tl mt-2 py-1" style="">{{ card.url_text }}</a>
         </div>
       </div>
+      {% endif %}
+
+      {% assign card = site.data.homepage.cards.three %}
+      {% if card.visible == true %}
+      <div class="card card-pricing px-0 py-0 border-0 bg-gray-ll mb-4">
+        <h5 class="mb-0 pl-4 k-subheader bg-gray py-2 text-white">{{ card.title }}</h5>
+        <div class="card-body pt-3">
+            <h5 class="heading heading-5 strong-600"></h5>
+            <p class="card-text text">{{ card.description }}</p>
+            <a href="{{ card.url }}" class="btn btn-gray mt-2 py-1" style="">{{ card.url_text }}</a>
+        </div>
+      </div>
+      {% endif %}
     </div>
   </div>
 </section>
