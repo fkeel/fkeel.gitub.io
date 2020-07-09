@@ -1,5 +1,5 @@
 # Site settings
-url: http://fkeel.github.io
+url: https://fkeel.github.io #use https
 
 # Blog settings
 markdown: kramdown
