@@ -7,7 +7,7 @@ about:
 
 # middle column
 updates:
-  count: 3 #how many updates to show
+  count: 4 #how many updates to show
   cutoff: 200 #how many words to show for each update
   read_more:
     title: More
