@@ -1,3 +1,5 @@
+
+
 /*
 
 Add your custom styles below
@@ -86,36 +88,40 @@ section.slice {
 
 
 .bg-lightest {
-  background: linear-gradient(rgba(0,0,0,0.015), white);
+  background: linear-gradient(#f5f5f5, white);
 }
 
 .bg-cyan-ll {
   background: linear-gradient(theme-color("cyan-l"), theme-color("cyan-ll") 80%);
 }
 
-.bg-orange-ll {
-  background: linear-gradient(theme-color("orange-l"), theme-color("orange-ll") 80%);
-}
-
-.bg-green-ll {
-  background: linear-gradient(theme-color("green-l"), theme-color("green-ll")80%);
-}
-
 .bg-magenta-ll {
-  background: linear-gradient(theme-color("magenta-l"), theme-color("magenta-ll")80%);
-}
-
-.bg-violet-ll {
-  background: linear-gradient(theme-color("violet-l"), theme-color("violet-ll")80%);
+  background: linear-gradient(theme-color("magenta-l"), theme-color("magenta-ll") 80%);
 }
 
 .bg-gray-ll {
-  background: linear-gradient(theme-color("gray-l"), theme-color("gray-ll")80%);
+  background: linear-gradient(theme-color("gray-l"), theme-color("gray-ll") 80%);
 }
 
-.bg-base02-ll {
-  background: linear-gradient(theme-color("base02-l"), theme-color("base02-ll")80%);
-}
+// .bg-orange-ll {
+//   background: linear-gradient(theme-color("orange-l"), theme-color("orange-ll") 80%);
+// }
+
+// .bg-green-ll {
+//   background: linear-gradient(theme-color("green-l"), theme-color("green-ll")80%);
+// }
+
+
+
+// .bg-violet-ll {
+//   background: linear-gradient(theme-color("violet-l"), theme-color("violet-ll")80%);
+// }
+
+
+
+// .bg-base02-ll {
+//   background: linear-gradient(theme-color("base02-l"), theme-color("base02-ll")80%);
+// }
 
 
 
@@ -154,9 +160,7 @@ section.slice {
     }
 }
 
-
 // [-==================================]
-
 
 // header {
 //   position: relative;

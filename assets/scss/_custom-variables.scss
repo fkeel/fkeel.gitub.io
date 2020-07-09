@@ -1,28 +1,28 @@
+
+
 /*
 
 Copy and paste the variables that you want to modify from _variables.scss. The default ones will be overridden.
 
 */
 
+// ====================================
+// Screen settings
 
-//$body-bg: #fff;
-
+// Container width override for XL screen
 @media only screen and (min-width : 1200px) {
     .container { max-width: 1360px; }
 }
 
-$custom-border-radius: 0.05rem;
-
-$badge-pill-border-radius: $custom-border-radius;
-$border-radius: $custom-border-radius;
-$input-border-radius: $custom-border-radius;
+// ====================================
+// Website colors
 
 
 // $primary:       #00458B;
 // $tertiary:      #3FD2C7;
 // $secondary:     #99DDFF;
 
-
+// Solarized colors
 $base03:    #002b36;
 $base02:    #073642;
 $base01:    #586e75;
@@ -40,6 +40,16 @@ $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #859900;
 
+
+$magenta-l:  #ecc2d6; // calculated from rgba($magenta, 25%)
+$magenta-ll: #f2d3e1; // calculated from rgba($magenta, 12.5%)
+$cyan-l:     #c5dfdd; // calculated from rgba($cyan, 25%)
+$cyan-ll:    #d6e8e7; // calculated from rgba($cyan, 12.5%)
+$gray-ll:    #d2d4d7; // calculated from rgba($gray, 12.5%)
+$magenta-tl: #c44680; // calculated from rgba($magenta, 75%)
+$cyan-tl:    #4e9f98; // calculated from rgba($cyan, 75%)
+
+// Standard color map
 $colors: ();
 $colors: map-merge((
   "base1":      $base1,
@@ -69,6 +79,10 @@ $colors: map-merge((
   "lightest":    $gray-100,
   "gray-dark":  $gray-800,
 ), $colors);
+
+// Full color map
+// Theme colors are mixed into bg-* and btn-* classes
+// For compatibility purposes, any rgba() colors used need to be converted to HEX
 
 $theme-colors: ();
 $theme-colors: map-merge((
@@ -103,53 +117,61 @@ $theme-colors: map-merge((
   "cyan":       $cyan,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-l":     rgba($gray-600, 25%),
-  "gray-ll":     rgba($gray-600, 12.5%),
-  "gray-lll":     rgba($gray-600, 5%),
-  "base03-l":      rgba($base03, 25%),
-  "base03-ll":      rgba($base03, 12.5%),
-  "base03-lll":      rgba($base03, 5%),
-  "base02-l":      rgba($base02, 25%),
-  "base02-ll":      rgba($base02, 12.5%),
-  "base02-lll":      rgba($base02, 5%),
-  "blue-l":     rgba($blue, 25%),
-  "violet-l":     rgba($violet, 25%),
-  "yellow-l":     rgba($yellow, 25%),
-  "magenta-l":     rgba($magenta, 25%),
-  "red-l":     rgba($red, 25%),
-  "orange-l":     rgba($orange, 25%),
-  "green-l":     rgba($green, 25%),
-  "cyan-l":     rgba($cyan, 25%),
-  "blue-ll":     rgba($blue, 12.5%),
-  "violet-ll":     rgba($violet, 12.5%),
-  "yellow-ll":     rgba($yellow, 12.5%),
-  "magenta-ll":     rgba($magenta, 12.5%),
-  "red-ll":     rgba($red, 12.5%),
-  "orange-ll":     rgba($orange, 12.5%),
-  "green-ll":     rgba($green, 12.5%),
-  "cyan-ll":     rgba($cyan, 12.5%),
-  "blue-lll":     rgba($blue, 5%),
-  "violet-lll":     rgba($violet, 5%),
-  "yellow-lll":     rgba($yellow, 5%),
-  "magenta-lll":     rgba($magenta, 5%),
-  "red-lll":     rgba($red, 5%),
-  "orange-lll":     rgba($orange, 5%),
-  "green-lll":     rgba($green, 5%),
-  "cyan-lll":     rgba($cyan, 5%),
-  "blue-tl":     rgba($blue, 75%),
-  "violet-tl":     rgba($violet, 75%),
-  "yellow-tl":     rgba($yellow, 75%),
-  "magenta-tl":     rgba($magenta, 75%),
-  "red-tl":     rgba($red, 75%),
-  "orange-tl":     rgba($orange, 75%),
-  "green-tl":     rgba($green, 75%),
-  "cyan-tl":     rgba($cyan, 75%),
+  "magenta-l":     $magenta-l,
+  "magenta-ll":     $magenta-ll,
+  "cyan-l":     $cyan-l,
+  "cyan-ll":     $cyan-ll,
+  "gray-ll":     $gray-ll,
+  "magenta-tl":     $magenta-tl,
+  "cyan-tl":     $cyan-tl,
+  // "gray-l":     rgba($gray-600, 25%),
+  // "gray-lll":     rgba($gray-600, 5%),
+  // "base03-l":      rgba($base03, 25%),
+  // "base03-ll":      rgba($base03, 12.5%),
+  // "base03-lll":      rgba($base03, 5%),
+  // "base02-l":      rgba($base02, 25%),
+  // "base02-ll":      rgba($base02, 12.5%),
+  // "base02-lll":      rgba($base02, 5%),
+  // "blue-l":     rgba($blue, 25%),
+  // "violet-l":     rgba($violet, 25%),
+  // "yellow-l":     rgba($yellow, 25%),
+  // "red-l":     rgba($red, 25%),
+  // "orange-l":     rgba($orange, 25%),
+  // "green-l":     rgba($green, 25%),
+  // "blue-ll":     rgba($blue, 12.5%),
+  // "violet-ll":     rgba($violet, 12.5%),
+  // "yellow-ll":     rgba($yellow, 12.5%),
+  // "red-ll":     rgba($red, 12.5%),
+  // "orange-ll":     rgba($orange, 12.5%),
+  // "green-ll":     rgba($green, 12.5%),
+  // "blue-lll":     rgba($blue, 5%),
+  // "violet-lll":     rgba($violet, 5%),
+  // "yellow-lll":     rgba($yellow, 5%),
+  // "magenta-lll":     rgba($magenta, 5%),
+  // "red-lll":     rgba($red, 5%),
+  // "orange-lll":     rgba($orange, 5%),
+  // "green-lll":     rgba($green, 5%),
+  // "cyan-lll":     rgba($cyan, 5%),
+  // "blue-tl":     rgba($blue, 75%),
+  // "violet-tl":     rgba($violet, 75%),
+  // "yellow-tl":     rgba($yellow, 75%),
+  // "red-tl":     rgba($red, 75%),
+  // "orange-tl":     rgba($orange, 75%),
+  // "green-tl":     rgba($green, 75%),
 ), $theme-colors);
 
 $link-color:                $violet;
 $link-decoration:           none;
 $link-hover-color:          darken($link-color, 25%);
 $link-hover-decoration:     unone;
+
+// ====================================
+// Radius removal
+$custom-border-radius: 0.05rem;
+$badge-pill-border-radius: $custom-border-radius;
+$border-radius: $custom-border-radius;
+$input-border-radius: $custom-border-radius;
+
 
 $btn-border-radius:           $input-border-radius;
 $btn-border-radius-xl:        $input-border-radius;
@@ -164,30 +186,8 @@ $input-border-radius-xl:                $border-radius;
 $input-border-radius-lg:                $border-radius;
 $input-border-radius-sm:                $border-radius;
 
-@mixin rebase($rebase03,$rebase02,$rebase01,$rebase00,$rebase0,$rebase1,$rebase2,$rebase3)
-{
-    background-color:$rebase03;
-    color:$rebase0;
-    * { color:$rebase0; }
-    h1,h2,h3,h4,h5,h6 { color:$rebase1; border-color: $rebase0; }
-    a, a:active, a:visited { color: $rebase1; }
-}
-@mixin accentize($accent) {
-    a, a:active, a:visited, code.url { color: $accent; }
-    h1,h2,h3,h4,h5,h6 {color:$accent}
-}
-/* light is default mode, so pair with general html definition */
-// .light { @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)}
-// .dark  { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)}
-
-
-
-
-
-// FONT background-size:
-// Fonts
-
-
+// ====================================
+// Font settings
 $font-family-base: 'Titillium Web', sans-serif;
 $font-family-alt: 'Titillium Web', sans-serif;
 
@@ -216,7 +216,6 @@ $headings-font-family:        inherit;
 $headings-font-weight:        500;
 $headings-line-height:        1.2;
 $headings-color:              inherit;
-
 $headings-margin-bottom:      ($spacer / 2);
 $headings-font-family:        inherit;
 $headings-font-weight:        600;
@@ -227,7 +226,6 @@ $display1-size:               6rem;
 $display2-size:               5.5rem;
 $display3-size:               4.5rem;
 $display4-size:               3.5rem;
-
 $display1-weight:             300;
 $display2-weight:             300;
 $display3-weight:             300;
@@ -236,31 +234,31 @@ $display-line-height:         $headings-line-height;
 
 $lead-font-size:              ($font-size-base * 1.25);
 $lead-font-weight:            300;
-
 $small-font-size:             80%;
-
 $text-muted:                  $gray-500;
-
 $blockquote-small-color:      $gray-600;
 $blockquote-font-size:        ($font-size-base * 1.25);
-
 $hr-border-color:             rgba($black, .1);
 $hr-border-width:             $border-width;
-
 $mark-padding:                .2em;
-
 $dt-font-weight:              $font-weight-bold;
-
 $list-inline-padding:         .5rem;
-
 $mark-bg:                     #fcf8e3;
-
 $hr-margin-y:                 $spacer;
 
+$nav-link-padding-y:          .15rem;
+$nav-link-padding-x:          .75rem;
 
-
-$nav-link-padding-y:                .15rem;
-$nav-link-padding-x:                .75rem;
-
-// $navbar-padding-y:                  0rem;
-// $navbar-padding-x:                  0rem;
+// Solarized mixins
+@mixin rebase($rebase03,$rebase02,$rebase01,$rebase00,$rebase0,$rebase1,$rebase2,$rebase3)
+{
+    background-color:$rebase03;
+    color:$rebase0;
+    * { color:$rebase0; }
+    h1,h2,h3,h4,h5,h6 { color:$rebase1; border-color: $rebase0; }
+    a, a:active, a:visited { color: $rebase1; }
+}
+@mixin accentize($accent) {
+    a, a:active, a:visited, code.url { color: $accent; }
+    h1,h2,h3,h4,h5,h6 {color:$accent}
+}
