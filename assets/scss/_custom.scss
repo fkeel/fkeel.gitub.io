@@ -1,11 +1,6 @@
-
-
 /*
-
 Add your custom styles below
-
 */
-
 @import "_custom-variables.scss";
 
 // Container width override for XL screen
@@ -17,27 +12,19 @@ html * {
   color-profile: sRGB;
   rendering-intent: auto;
 }
+body {
+  padding-top: 94px;
+  @media only screen and (max-width : 767px) {
+    padding-top: 42px;
+  }
+  background-color: white;
+}
 
 .light {
   @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)
 }
 .dark  {
   @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)
-}
-
-body {
-  padding-top: 94px;
-
-  // background-color: #ffffff;
-  // background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-  // background-color: #ffffff;
-
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-  background-color: white;
-  // background-image: repeating-linear-gradient(60deg, transparent, transparent 35px, theme-color("violet-ll") 35px, theme-color("violet-ll") 70px);
 }
 
 a.nav-link {
@@ -56,8 +43,6 @@ section.slice {
   padding-bottom: 2rem;
 }
 
-.k-subheader { }
-.k-subheader-alt { }
 
 .k-border-red {
   background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba($red, 70%) 60%);
@@ -91,79 +76,53 @@ section.slice {
   background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba($violet, 70%) 60%);
 }
 
-
 .bg-lightest {
   background: linear-gradient(#f5f5f5, white);
 }
-
 .bg-cyan-ll {
   background: linear-gradient(theme-color("cyan-l"), theme-color("cyan-ll") 80%);
 }
-
 .bg-magenta-ll {
   background: linear-gradient(theme-color("magenta-l"), theme-color("magenta-ll") 80%);
 }
-
 .bg-gray-ll {
   background: linear-gradient(theme-color("gray-l"), theme-color("gray-ll") 80%);
 }
 
-// .bg-orange-ll {
-//   background: linear-gradient(theme-color("orange-l"), theme-color("orange-ll") 80%);
+// .fullscreen-bg {
+//     position: relative;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     overflow: hidden;
+//     z-index: -100;
 // }
 
-// .bg-green-ll {
-//   background: linear-gradient(theme-color("green-l"), theme-color("green-ll")80%);
+// .fullscreen-bg__video {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     width: auto;
+//     height: auto;
+//     min-width: 100%;
+//     min-height: 100%;
+//     -webkit-transform: translate(-50%, -50%);
+//        -moz-transform: translate(-50%, -50%);
+//         -ms-transform: translate(-50%, -50%);
+//       transform: translate(-50%, -50%);
 // }
 
+// @media (max-width: 1100px) {
+//     .fullscreen-bg {
+//         display: none;
+//         // background: url('uploads/video/stable_background.mp4') center center / cover no-repeat;
+//     }
 
-
-// .bg-violet-ll {
-//   background: linear-gradient(theme-color("violet-l"), theme-color("violet-ll")80%);
+//     .fullscreen-bg__video {
+//         display: none;
+//     }
 // }
-
-
-
-// .bg-base02-ll {
-//   background: linear-gradient(theme-color("base02-l"), theme-color("base02-ll")80%);
-// }
-
-
-
-.fullscreen-bg {
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-}
-
-.fullscreen-bg__video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-       -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-}
-
-@media (max-width: 1100px) {
-    .fullscreen-bg {
-        display: none;
-        // background: url('uploads/video/stable_background.mp4') center center / cover no-repeat;
-    }
-
-    .fullscreen-bg__video {
-        display: none;
-    }
-}
 
 // [-==================================]
 
