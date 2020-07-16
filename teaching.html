@@ -28,8 +28,11 @@ nav-bg: bg-base03
           {% if entry.note.image != nil %}
             <img alt="Teaching teaser" src="{{entry.note.image | prepend: site.url }}" class="img-fluid img-left rounded" style="{% if entry.image_outline != nil %}border: 1px solid #d2d4d7;{% endif %}">
           {% else %}
-            <!-- <img alt="Teaching teaser" src="{{ site.data.teaching.image_placeholder | prepend: site.url }}" class="img-fluid img-left rounded"> -->
+            {% if site.data.teaching.image_placeholder_settings.use_random_online == true %}
             <img alt="Teaching teaser" src="https://picsum.photos/350/350/?grayscale" class="img-fluid img-left rounded">
+            {% else %}
+            <img alt="Teaching teaser" src="{{ site.data.teaching.image_placeholder_settings.local_placeholder | prepend: site.url }}" class="img-fluid img-left rounded">
+            {% endif %}
           {% endif %}
 
         </div>
