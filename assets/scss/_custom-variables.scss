@@ -155,7 +155,7 @@ $theme-colors: map-merge((
   // "green-tl":     rgba($green, 75%),
 ), $theme-colors);
 
-$link-color:                $violet;
+$link-color:                $cyan;
 $link-decoration:           none;
 $link-hover-color:          darken($link-color, 25%);
 $link-hover-decoration:     unone;
