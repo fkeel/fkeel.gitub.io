@@ -4,7 +4,9 @@ title: Research
 active_menu_title: "Research"
 ---
 
-{% assign research_data = site.data.research | group_by: 'year' %}
+{% assign unsorted_research_data = site.data.research | group_by: 'year' %}
+{% assign research_data = unsorted_research_data | sort: 'name' | reverse %}
+
 {% for research_entry_group in research_data %}
   {% assign group_size = research_entry_group.size %}
   <section class="slice slice-lg pb-0">
