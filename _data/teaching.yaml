@@ -12,7 +12,10 @@ timeline:
           - text: Course
             style: green
         description: |
-          <a href="http://studies.ku.dk/masters/computer-science/programme-structure/recommended_studytracks/hci/">User Interface Technologies (UIT)</a> is the hardware-focused Master level HCI course offered by the Department of Computer Science. I completely redesigned this course from bottom up. My personal aim of the course was for students to build a physical research prototype, learn how to position their own work relative to current research narratives, and communicate it effectively. In addition to the hardware-prototyping focus of the course, there is a strong emphasis on writing skills. Students work in groups of 3 – 4 on weekly assignments which build upon each other, culminating in a research paper and working demo.
+          User Interface Technologies (UIT) is the hardware-focused Master level HCI course offered by the Department of Computer Science. I completely redesigned this course from bottom up. My personal aim of the course was for students to build a physical research prototype, learn how to position their own work relative to current research narratives, and communicate it effectively. In addition to the hardware-prototyping focus of the course, there is a strong emphasis on writing skills. Students work in groups of 3 – 4 on weekly assignments which build upon each other, culminating in a research paper and working demo.
+        links:
+          - name: UIT Webpage
+            url: http://studies.ku.dk/masters/computer-science/programme-structure/recommended_studytracks/hci/
 
   -   year: 2014
       note:
@@ -44,7 +47,10 @@ timeline:
         tags:
           - text: Workshop
             style: cyan
-        description: I designed an introduction to Arduino and Processing crash-course that was taught by myself and Perinlle Bjoern at the <a href="http://ccc.ku.dk/news/makerspace-ucph/">DIKU Makerweek</a>.
+        description: I designed an introduction to Arduino and Processing crash-course that was taught by myself and Perinlle Bjoern at the DIKU Makerweek.
+        links:
+          - name: DIKU Makerweek
+            url: http://ccc.ku.dk/news/makerspace-ucph/
 
   -   year: 2014
       note:
@@ -78,6 +84,9 @@ timeline:
           - text: Workshop
             style: cyan
         description: <a href="http://www.lernell.com/">Lernell</a> is a family run toy-design studio that, amongst other customers, designs toys for Disney. If Lernell add interactive features to their toys, these features are usually outsourced to engineering teams. Lernell felt that this process could be improved if they learned to understand interactive electronics better themselves. They hired me for an 8-hour Arduino crash-course.
+        links:
+          - name: Lernell
+            url: http://www.lernell.com/
 
   -   year: 2018
       note:
@@ -88,7 +97,10 @@ timeline:
           - text: Conference Workshop
             style: magenta
         authors: Rachel Freire, Paul Strohmeier, Cedric Honnet, Jarrod Knibbe, Sophia Brueckner
-        venue: Workshop at TEI 2019 [ <a href="https://3dtextiles.github.io/">web </a>]
+        venue: Workshop at TEI 2019
+        links:
+          - name: web
+            url: https://3dtextiles.github.io/
 
   -   year: 2017
       note:
