@@ -9,13 +9,11 @@ nav-bg: bg-base03
 {% assign data = unsorted_data | sort: 'name' | reverse %}
 {% for entry_group in data %}
   {% assign group_size = entry_group.size %}
-  {% assign grid_size = 1 %}
-  {% assign max_iterations = group_size | divided_by: grid_size | ceil %}
 
   <section class="slice slice-lg pb-0">
     <div class="row bg-wh" >
       <div class="col-12">
-        <div class="mb-4 text-left">
+        <div class="mt-5 mb-4 text-left">
           {% assign name = entry_group.name %}
           {% if name == "" %}{% break %}{% endif %}
           <h4 class="heading font-weight-700"><span class="k-border-cyan">{{name}}</span></h3>
@@ -23,20 +21,19 @@ nav-bg: bg-base03
       </div>
     </div>
 
-    {% assign m = max_iterations-1 %}
-    {% for iteration in (0..m) %}
+
+    {% for entry in entry_group.items %}
       <div class="row cols-md-space cols-sm-space cols-xs-space mb-0 bg-white">
-      {% for entry in entry_group.items offset:iteration limit:3 %}
-        <div class="col-lg-3 pb-5">
+        <div class="col-lg-3 pt-4 pb-4">
           {% if entry.note.image != nil %}
-            <img alt="Teaching teaser" src="{{entry.note.image | prepend: site.url }}" class="img-fluid img-left rounded">
+            <img alt="Teaching teaser" src="{{entry.note.image | prepend: site.url }}" class="img-fluid img-left rounded" style="{% if entry.image_outline != nil %}border: 1px solid #d2d4d7;{% endif %}">
           {% else %}
             <!-- <img alt="Teaching teaser" src="{{ site.data.teaching.image_placeholder | prepend: site.url }}" class="img-fluid img-left rounded"> -->
             <img alt="Teaching teaser" src="https://picsum.photos/350/350/?grayscale" class="img-fluid img-left rounded">
           {% endif %}
 
         </div>
-        <div class="col-lg-9 pl-5 pb-5">
+        <div class="col-lg-9 pl-lg-5 pl-sm-0 pt-4 pb-4">
           <div class="card border-0">
             <div class="">
               <h4 class="k-subheader">{{entry.note.title}}</h4>
@@ -65,8 +62,7 @@ nav-bg: bg-base03
             </div>
           </div>
         </div>
-      {% endfor %}
-      </div>
-  {% endfor %}
+    </div>
+    {% endfor %}
   </section>
 {% endfor %}
