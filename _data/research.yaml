@@ -33,6 +33,7 @@
   venue: Tangible, Embedded, and Embodied Interaction (TEI)
   description: Touch input on clothing is difficult as there are ample opportunities for unintentional activation. In this paper we present a simple fabric design that acts as both a resistive and a capacitive sensor. We present instructions on how to build it and we demonstrate that the resulting hybrid sensor is more robust than either resistive- or capacitive-only equivalents and that the additional information improves the detection of custom gestures.
   image: /uploads/image/2018_zPatch.jpg
+  image_outline: true
   tags:
     - text: paper
       style: magenta
@@ -49,19 +50,6 @@
       url: https://github.com/fkeel/zPatch
     - name: instructables
       url: https://www.instructables.com/id/ZPatch-Hybrid-ResistiveCapacitive-ETextile-Input/
-
-- title: Automatic Calibration of High Density Electric Muscle Stimulation
-  year: 2017
-  authors: Jarrod Knibbe, Paul Strohmeier, Sebastian Boring and Kasper Hornbæk
-  venue: Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)
-  description: Using methods presented in this paper we could in the future record the skilled movement of an expert musician and play them back using the hands and fingers of a novice. I assisted in designing the electronics and implemented the circuitry.
-  image: /uploads/image/2017_IMWUT_EMSCalibration-700x732.jpg
-  tags:
-    - text: paper
-      style: magenta
-  links:
-    - name: pdf
-      url: /uploads/pdf/2017_IMWUT_EMSCalibration-287x300.jpg
 
 - title: "ReFlex: A Flexible Smartphone with Active Haptic Feedback for Bend Input"
   year: 2016
@@ -90,6 +78,19 @@
       url: /uploads/pdf/2016_CHI_Doodles.pdf
     - name: video
       url: /uploads/pdf/handout.pdf
+
+- title: Automatic Calibration of High Density Electric Muscle Stimulation
+  year: 2017
+  authors: Jarrod Knibbe, Paul Strohmeier, Sebastian Boring and Kasper Hornbæk
+  venue: Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)
+  description: Using methods presented in this paper we could in the future record the skilled movement of an expert musician and play them back using the hands and fingers of a novice. I assisted in designing the electronics and implemented the circuitry.
+  image: /uploads/image/2017_IMWUT_EMSCalibration-700x732.jpg
+  tags:
+    - text: paper
+      style: magenta
+  links:
+    - name: pdf
+      url: /uploads/pdf/2017_IMWUT_EMSCalibration-287x300.jpg
 
 - title: "DIY IR sensors for augmenting objects and human skin"
   year: 2015
