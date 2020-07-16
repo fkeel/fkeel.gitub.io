@@ -2,7 +2,7 @@ intro: I believe learning is an active process and I believe trying and failing 
 
 image_placeholder_settings:
   local_placeholder: /assets/images/placeholders/teaching.png # placeholder image for entries without image property
-  use_random_online: false #use random online image instead of local_placeholder
+  use_random_online: true #use random online image instead of local_placeholder
 
 
 timeline:
