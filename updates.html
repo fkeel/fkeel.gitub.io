@@ -7,12 +7,12 @@ nav-bg: bg-base03
 
 <section class="slice">
     <div class="row">
-    <div class="col-lg-12 col-md-12">
+    <div class="col-lg-12 offset-lg-0 col-md-12 offset-md-0">
       <h3 class="mb-5 k-subheader"><span class="k-border-cyan">Updates</span></h3>
       {% assign home_updates = site.data.updates %}
       {% for data in home_updates %}
-      <div class="card card-pricing mb-4 border-0 bg-lightest">
-          <div class="card-body">
+      <div class="card card-pricing mb-4 border-0 bg-lightest mb-5">
+          <div class="card-body px-5 py-4">
               <h5 class="heading heading-5 strong-600 mb-4">{{ data.date }}</h5>
               <p class="card-text">{{ data.content }}</p>
           </div>
