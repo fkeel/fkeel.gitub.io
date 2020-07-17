@@ -23,11 +23,12 @@ nav-bg: bg-base03
                       <h3>{{ group.name }}</h3>
 
                         {% for item in group.items %}
-                          <section>
-                          {% if item.context != nil %}
+                        {% if item.context != nil %}
+                          <section class="with-context">
                             <h4 class="text-muted">{{ item.context }}</h4>
-                          {% endif %}
-
+                        {% else %}
+                          <section>
+                        {% endif %}
                           <ul>
                             <li>{{ item.note }}</li>
                           </ul>
