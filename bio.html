@@ -5,66 +5,57 @@ active_menu_title: "Bio"
 nav-bg: bg-base03
 ---
 <section class="slice slice-lg">
-  <div class="row">
-    <div class="col-lg-12 col-md-9">
-      {% assign card_list = site.data.teaching.courses %}
-      <h3 class="mb-4"><span class="k-border-cyan">Bio</span></h3>
+  <h3 class="mb-4"><span class="k-border-cyan">Bio</span></h3>
 
-      {% assign selection = site.data.bio.education %}
-      <div class="card card-pricing mb-5 border-0 bg-lightest">
-          <div class="card-body">
-            <h5 class="mb-4 k-subheader">{{ selection.title }}</h5>
-            {{ selection.content }}
+  <div class="row">
+    <div class="col-lg-7 col-md-12">
+    {% for section in site.data.bio.timeline %}
+       <div class="card card-pricing mb-5 border-0 bg-lightest">
+          <div class="card-body px-5">
+            <h4 class="mb-4">{{ section.name }}</h4>
+            {% assign items = section.items | sort: 'year' | reverse %}
+            {% assign items_grouped = items | group_by: 'year' %}
+
+            <div class="timeline">
+              <div class="timeline-container ">
+                {% for group in items_grouped %}
+                  <section class="year">
+                      <h3>{{ group.name }}</h3>
+
+                        {% for item in group.items %}
+                          <section>
+                          {% if item.context != nil %}
+                            <h4 class="text-muted">{{ item.context }}</h4>
+                          {% endif %}
+
+                          <ul>
+                            <li>{{ item.note }}</li>
+                          </ul>
+                          </section>
+                        {% endfor %}
+                  </section>
+                {% endfor %}
+              </div>
+            </div>
+
+
           </div>
       </div>
+    {% endfor %}
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-lg-12 col-md-9">
+    <div class="col-lg-5 col-md-12">
       {% assign selection = site.data.bio.skills %}
       <div class="card card-pricing mb-5 border-0 bg-lightest">
-          <div class="card-body">
-            <h5 class="mb-4 k-subheader">{{ selection.title }}</h5>
-            {{ selection.content }}
+          <div class="card-body px-5">
+            <h4 class="mb-4">{{ selection.title }}</h4>
+            {% for skill in selection.items %}
+              <b>{{ skill.name }}</b>
+              <p>{{ skill.description }}</p>
+            {% endfor %}
           </div>
       </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-lg-12 col-md-9">
-      {% assign selection = site.data.bio.research_experience %}
-      <div class="card card-pricing mb-5 border-0 bg-lightest">
-          <div class="card-body">
-            <h5 class="mb-4 k-subheader">{{ selection.title }}</h5>
-            {{ selection.content }}
-          </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-12 col-md-9">
-      {% assign selection = site.data.bio.talks %}
-      <div class="card card-pricing mb-5 border-0 bg-lightest">
-          <div class="card-body">
-            <h5 class="mb-4 k-subheader">{{ selection.title }}</h5>
-            {{ selection.content }}
-          </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-12 col-md-9">
-      {% assign selection = site.data.bio.academic %}
-      <div class="card card-pricing mb-5 border-0 bg-lightest">
-          <div class="card-body">
-            <h5 class="mb-4 k-subheader">{{ selection.title }}</h5>
-            {{ selection.content }}
-          </div>
-      </div>
-    </div>
-  </div>
 </section>
