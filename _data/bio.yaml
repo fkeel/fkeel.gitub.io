@@ -1,7 +1,6 @@
 timeline:
     - name: Formal education
       items:
-          # context: ongoing
         - year: 2017
           note: Visiting Researcher at the Responsive Environments group of the MIT Media Lab
           context: Winter
@@ -9,9 +8,11 @@ timeline:
           note: MSc from Queen’s University in Canada
         - year: 2015
           note: PhD Fellow at the University of Copenhagen, Denmark
-          #context: since 2013
+          context: Optional text
+          # context: since 2013
         - year: 2013
           note: BA (Hons.) from University College Maastricht, Maastricht University, The Netherlands
+          context: Optional text
           #context: since 2009
 
     - name: Research experience
@@ -21,12 +22,15 @@ timeline:
             context: ongoing
         -   year: 2017
             note: Design and Implementation of micro-gravity robotics experiment for the Media Lab Space Initiative
+            context: optional text
             #context: "2017-2018"
         -   year: 2013
             note:  Research Assistant at the Human Media Lab, Queen’s University, Canada (research into wearable, pose-aware technologies)
+            context: optional text
             #context: "2013-2015"
         -   year: 2012
             note: Research Coordinator, Cybermedic, Paris/London (research into bio-compatible battery technologies for body modifications)
+            context: optional text
             #context: "2012-2014"
         -   year: 2011
             note: Research Fellow at the Human Media Lab, Queen’s University, Canada (prototyping of multi-display interaction environments)
