@@ -92,7 +92,7 @@ section.slice {
 
 $timeline-color: #c5c5c5;
 $timeline-color: rgba(42,161,152,0.7);
-$timeline-year-color: #gray;
+$timeline-year-color: gray;
 // TIMELINE
 .timeline {
   position: relative;
@@ -133,8 +133,11 @@ $timeline-year-color: #gray;
   // }
   section {
     position: relative;
-    padding-bottom: 1.25em;
-    margin-bottom: 2.2em;
+    padding-bottom: 1.5em;
+    margin-bottom: 0.5em;
+    &.with-context {
+      margin-bottom: 2.2em !important;
+    }
     h4 {
       position: absolute;
       bottom: 0;
@@ -145,6 +148,7 @@ $timeline-year-color: #gray;
       line-height: 1.2em;
       margin: 0;
       padding: 0 0 0 88px;
+
       // color: $timeline-color;
       @media (min-width: 62em) {
         // font-size: 1em;
