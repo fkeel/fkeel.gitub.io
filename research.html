@@ -1,8 +1,16 @@
 ---
-layout: page
+layout: page_with_header
 title: Research
 active_menu_title: "Research"
 ---
+
+
+
+{% assign header_text = site.data.homepage.cards.one.description %}
+{% include _page_header.html %}
+
+<main>
+  <div class="container">
 
 {% assign unsorted_research_data = site.data.research | group_by: 'year' %}
 {% assign research_data = unsorted_research_data | sort: 'name' | reverse %}
@@ -15,7 +23,7 @@ active_menu_title: "Research"
         <div class="mt-5 text-left">
           {% assign name = research_entry_group.name %}
           {% if name == "" %}{% break %}{% endif %}
-          <h4 class="heading font-weight-700"><span class="k-border-cyan">{{name}}</span></h3>
+          <h4 class="heading font-weight-700"><span class="k-border-cyan">{{name}}</span></h4>
         </div>
       </div>
     </div>
@@ -56,3 +64,6 @@ active_menu_title: "Research"
     {% endfor %}
   </section>
 {% endfor %}
+
+</div>
+<main>

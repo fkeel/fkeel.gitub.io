@@ -8,10 +8,10 @@ about:
 # middle column
 updates:
   count: 4 #how many updates to show
-  cutoff: 200 #how many words to show for each update
+  cutoff: 1000 #how many words to show for each update
   read_more:
     title: More
-    description: 
+    description:
     url: /updates
     url_text: View Updates
 
@@ -28,7 +28,7 @@ cards:
   two:
     title: Bio
     description: |
-      I have PhD in “Datalogi” from the University of Copenhagen, a MSc in Computer Science from Queen’s University, Canada and a BA in Philosophy of Technology from University College Maastricht
+      I have PhD in “Datalogi” from the University of Copenhagen, a MSc in Computer Science from Queen’s University, Canada and a BA in Philosophy of Technology from University College Maastricht.
     url: /bio
     url_text: View Bio
     visible: true
