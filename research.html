@@ -1,16 +1,22 @@
 ---
-layout: page_with_header
+layout: page
 title: Research
 active_menu_title: "Research"
 ---
 
+<div class="row">
+  <div class="col-xl-6 col-md-12">
+    {% assign card = site.data.homepage.cards.one %}
+    <div class="card card-pricing border-0 bg-cyan-ll py-0">
+      <h3 class="mb-0 pl-4 mt-0 k-subheader bg-cyan text-white py-2 mx-0">Research</h3>
+      <div class="card-body py-4">
+          <p class="card-text text">{{ card.description }}</p>
+          <!-- <a href="{{ card.url }}" class="btn btn-cyan-tl mt-2 py-1">{{ card.url_text }}</a> -->
+      </div>
+    </div>
+  </div>
+</div>
 
-
-{% assign header_text = site.data.homepage.cards.one.description %}
-{% include _page_header.html %}
-
-<main>
-  <div class="container">
 
 {% assign unsorted_research_data = site.data.research | group_by: 'year' %}
 {% assign research_data = unsorted_research_data | sort: 'name' | reverse %}
@@ -20,7 +26,7 @@ active_menu_title: "Research"
   <section class="slice slice-lg pb-0">
     <div class="row bg-wh" >
       <div class="col-12">
-        <div class="mt-5 text-left">
+        <div class="mt-4 text-left">
           {% assign name = research_entry_group.name %}
           {% if name == "" %}{% break %}{% endif %}
           <h4 class="heading font-weight-700"><span class="k-border-cyan">{{name}}</span></h4>
@@ -64,6 +70,3 @@ active_menu_title: "Research"
     {% endfor %}
   </section>
 {% endfor %}
-
-</div>
-<main>
