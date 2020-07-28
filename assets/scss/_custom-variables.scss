@@ -46,6 +46,7 @@ $blue-tl:    rgba($blue, 0.75);
 $base:       #042b36cc;
 $base-l:     #042b363f;
 $base-ll:    #042b361f;
+$base-tl:    #042b36bf;
 
 // Standard color map
 $colors: ();
@@ -127,7 +128,9 @@ $theme-colors: map-merge((
   "base-l":      $base-l,
   "base-ll":     $base-ll,
   "blue-l":      $blue-l,
-  "blue-ll":     $blue-ll
+  "blue-ll":     $blue-ll,
+  "blue-tl":     $blue-tl,
+  "base-tl":     $base-tl
 ), $theme-colors);
 
 $link-color:                $blue;
