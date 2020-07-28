@@ -1,31 +1,31 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top py-2 navbar-translucent">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top py-2 navbar-translucent bg-base02">
   <div class="container">
     <a class="navbar-brand font-weight-500" href="../"><strong>Paul</strong> Strohmeier</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon text-black"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarMain">
+    <div class="collapse navbar-collapse pb-3 pb-lg-0" id="navbarMain">
       <ul class="navbar-nav ml-auto align-items-lg-left">
-        <h6 class="dropdown-header font-weight-600 d-lg-none px-0">Menu</h6>
+        <!-- <h6 class="dropdown-header font-weight-600 d-lg-none px-0">Menu</h6> -->
         {% for menu_item in site.data.website.menu %}
           <li class="nav-item">
             {% if page.active_menu_title == menu_item.title %}
-              <a class="nav-link bg-white text-black py-1 mt-2" href="{{ menu_item.url }}" style="color: black;">{{ menu_item.title }}</span></a>
+              <a class="nav-link bg-white text-black px-2 py-1 mt-2" href="{{ menu_item.url }}" style="color: black;">{{ menu_item.title }}</span></a>
             {% else %}
-              <a class="nav-link py-1 my-2" href="{{ menu_item.url }}">{{ menu_item.title }}</span></a>
+              <a class="nav-link px-2 py-1 mt-2" href="{{ menu_item.url }}">{{ menu_item.title }}</span></a>
             {% endif %}
           </li>
         {% endfor %}
         <div class="dropdown-divider d-lg-none my-4"></div>
-        <h6 class="dropdown-header font-weight-600 d-lg-none px-0">Social Media</h6>
+        <!-- <h6 class="dropdown-header font-weight-600 d-lg-none px-0"></h6> -->
         {% if site.data.website.contact.github %}
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="{{ site.data.website.contact.github }}" target="_blank"><i class="fab fa-github"></i><span class="ml-2 d-lg-none">Github</span></a>
+          <a class="nav-link nav-link-icon mt-2 my-lg-0" href="{{ site.data.website.contact.github }}" target="_blank"><i class="fab fa-github"></i><span class="ml-2 d-lg-none">Github</span></a>
         </li>
         {% endif %}
         {% if site.data.website.contact.email %}
             <li class="nav-item">
-              <a class="nav-link" href="mailto:{{ site.data.website.contact.email }}" target="_blank"><i class="fas fa-envelope"></i></a>
+              <a class="nav-link nav-link-icon mt-2 my-lg-0" href="mailto:{{ site.data.website.contact.email }}" target="_blank"><i class="fas fa-envelope"></i><span class="ml-2 d-lg-none">Contact</span></a>
             </li>
           {% endif %}
       </ul>

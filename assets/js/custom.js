@@ -18,13 +18,9 @@ $(document).ready(function() {
   // If Mobile, add background color when toggler is clicked
   $(".navbar-toggler").click(function() {
     if (!$(".navbar-collapse").hasClass("show")) {
-
+      $(".navbar").removeClass("navbar-translucent");
     } else {
-      if ($(window).scrollTop() < 70) {
-
-      } else {
-
-      }
+        $(".navbar").addClass("navbar-translucent");
     }
   });
   // ############
