@@ -25,7 +25,7 @@ active_menu_title: "Home"
       <div class="card card-pricing mb-4 border-0 bg-lightest">
           <div class="card-body">
               <h5 class="heading heading-5 strong-600 mb-4">{{ data.date }}</h5>
-              <p class="card-text">{{ data.content | strip_html | truncatewords:limit_words }}</p>
+              <p class="card-text">{{ data.content | truncatewords:limit_words }}</p>
           </div>
         </div>
       {% endfor %}
@@ -56,24 +56,24 @@ active_menu_title: "Home"
 
       {% assign card = site.data.homepage.cards.two %}
       {% if card.visible == true %}
-      <div class="card card-pricing border-0 bg-magenta-ll mb-4">
-        <h5 class="mb-0 pl-4 k-subheader bg-magenta text-white py-2">{{ card.title }}</h5>
+      <div class="card card-pricing border-0 bg-base-ll mb-4">
+        <h5 class="mb-0 pl-4 k-subheader bg-base text-white py-2">{{ card.title }}</h5>
         <div class="card-body pt-3">
             <h5 class="heading heading-5 strong-600"></h5>
             <p class="card-text text">{{ card.description }}</p>
-            <a href="{{ card.url }}" class="btn btn-magenta-tl mt-2 py-1" style="">{{ card.url_text }}</a>
+            <a href="{{ card.url }}" class="btn btn-base mt-2 py-1" style="">{{ card.url_text }}</a>
         </div>
       </div>
       {% endif %}
 
       {% assign card = site.data.homepage.cards.three %}
       {% if card.visible == true %}
-      <div class="card card-pricing px-0 py-0 border-0 bg-gray-ll mb-4">
-        <h5 class="mb-0 pl-4 k-subheader bg-gray py-2 text-white">{{ card.title }}</h5>
+      <div class="card card-pricing px-0 py-0 border-0 bg-magenta-ll mb-4">
+        <h5 class="mb-0 pl-4 k-subheader bg-magenta py-2 text-white">{{ card.title }}</h5>
         <div class="card-body pt-3">
             <h5 class="heading heading-5 strong-600"></h5>
             <p class="card-text text">{{ card.description }}</p>
-            <a href="{{ card.url }}" class="btn btn-gray mt-2 py-1" style="">{{ card.url_text }}</a>
+            <a href="{{ card.url }}" class="btn btn-magenta-tl mt-2 py-1" style="">{{ card.url_text }}</a>
         </div>
       </div>
       {% endif %}

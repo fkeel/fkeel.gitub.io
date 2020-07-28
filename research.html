@@ -5,18 +5,16 @@ active_menu_title: "Research"
 ---
 
 <div class="row">
-  <div class="col-xl-12 col-md-12">
+  <div class="offset-xl-6 col-xl-6 offset-md-0 col-md-12">
     {% assign card = site.data.homepage.cards.one %}
     <div class="card card-pricing border-0 bg-cyan-ll py-0">
       <h4 class="mb-0 pl-4 mt-0 k-subheader bg-cyan text-white py-2 mx-0">Research</h4>
       <div class="card-body py-4">
           <p class="card-text text">{{ card.description }}</p>
-          <!-- <a href="{{ card.url }}" class="btn btn-cyan-tl mt-2 py-1">{{ card.url_text }}</a> -->
       </div>
     </div>
   </div>
 </div>
-
 
 {% assign unsorted_research_data = site.data.research | group_by: 'year' %}
 {% assign research_data = unsorted_research_data | sort: 'name' | reverse %}
@@ -38,14 +36,14 @@ active_menu_title: "Research"
     {% for research_entry in research_entry_group.items %}
       {% assign i = i | plus:1 %}
       <div class="row cols-md-space cols-sm-space cols-xs-space mb-0 bg-white">
-        <div class="col-lg-3 pt-4 mb-0">
+        <div class="col-lg-3 pl-sm-0 order-xl-1 order-lg-1 order-md-1 order-sm-2 px-md-3 px-sm-3 pt-4 mb-0">
           {% if research_entry.image != nil %}
 
-            <img alt="Research teaser" src="{{research_entry.image | prepend: site.url }}" class="img-fluid img-left rounded" style="{% if research_entry.image_outline != nil %}border: 1px solid #ecedef;{% endif %}">
+            <img alt="Research teaser" src="{{research_entry.image | prepend: site.url }}" class="img-fluid img-left" style="{% if research_entry.image_outline != nil %}border: 1px solid #ecedef;{% endif %} max-height: 350px;">
 
           {% endif %}
         </div>
-        <div class="col-lg-9 pl-lg-5 pl-sm-0 pt-4 pb-3">
+        <div class="col-lg-9 pl-lg-5 pl-sm-0 order-xl-2 order-sm-1 px-md-3 px-sm-3 pt-4 pb-3">
           <div class="card border-0">
             <div class="">
               <h4 class="k-subheader">{{research_entry.title}}</h4>

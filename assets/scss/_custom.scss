@@ -17,13 +17,6 @@ body {
   background-color: white;
 }
 
-.light {
-  @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)
-}
-.dark  {
-  @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)
-}
-
 a.nav-link {
   border-radius: 0rem !important;
 }
@@ -40,54 +33,39 @@ section.slice {
   padding-bottom: 2rem;
 }
 
-.k-border-red {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba($red, 70%) 60%);
+$k-colors: "red", "orange", "green", "cyan", "blue", "magenta", "violet", "gray";
+@each $color in $k-colors {
+ .k-border-#{$color} {
+  background: -webkit-linear-gradient(rgba(255,255,255,0) 60%, rgba(theme-color(#{$color}), 0.7) 60%);
+  background: -o-linear-gradient(rgba(255,255,255,0) 60%, rgba(theme-color(#{$color}), 0.7) 60%);
+  background: linear-gradient(rgba(255,255,255,0) 60%, rgba(theme-color(#{$color}), 0.7) 60%);
+  }
 }
 
-.k-border-gray {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba(108, 117, 125, 70%) 60%);
-}
+// .k-border-gray {
+//   background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba(108, 117, 125, 70%) 60%);
+// }
 
-.k-border-orange {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba($orange, 70%) 60%);
-}
-
-.k-border-green {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba($green, 70%) 60%);
-}
-
-.k-border-cyan {
-  background: linear-gradient(180deg, rgba(255,255,255,0) 60%, rgba(42,161,152,0.7) 60%)
-}
-
-.k-border-blue {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba($blue, 70%) 60%);
-}
-
-.k-border-magenta {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba($magenta, 70%) 60%);
-}
-
-.k-border-yellow {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba($yellow, 70%) 60%);
-}
-
-.k-border-violet {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba($violet, 70%) 60%);
-}
+// .k-border-cyan {
+//   background: linear-gradient(180deg, rgba(255,255,255,0) 60%, rgba(42,161,152,0.7) 60%)
+// }
 
 .bg-lightest {
   background: linear-gradient(#f5f5f5, white);
 }
-.bg-cyan-ll {
-  background: linear-gradient(theme-color("cyan-l"), theme-color("cyan-ll") 80%);
+$ll-colors: "cyan", "magenta", "gray";
+@each $color in $ll-colors {
+  .bg-#{$color}-ll {
+    background: linear-gradient(theme-color(#{$color}-l), theme-color(#{$color}-ll) 80%);
+  }
 }
-.bg-magenta-ll {
-  background: linear-gradient(theme-color("magenta-l"), theme-color("magenta-ll") 80%);
-}
-.bg-gray-ll {
-  background: linear-gradient(theme-color("gray-l"), theme-color("gray-ll") 80%);
-}
+
+// .bg-magenta-ll {
+//   background: linear-gradient(theme-color("magenta-l"), theme-color("magenta-ll") 80%);
+// }
+// .bg-gray-ll {
+//   background: linear-gradient(theme-color("gray-l"), theme-color("gray-ll") 80%);
+// }
 
 
 $timeline-color: #c5c5c5;

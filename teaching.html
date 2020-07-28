@@ -6,13 +6,12 @@ active_menu_title: "Teaching"
 
 
 <div class="row">
-  <div class="col-xl-12 col-md-12">
+  <div class="offset-xl-6 col-xl-6 offset-md-0 col-md-12">
     {% assign card = site.data.homepage.cards.three %}
-    <div class="card card-pricing border-0 bg-gray-ll py-0">
-      <h4 class="mb-0 pl-4 mt-0 k-subheader bg-gray text-white py-2 mx-0">Teaching</h4>
+    <div class="card card-pricing border-0 bg-magenta-ll py-0">
+      <h4 class="mb-0 pl-4 mt-0 k-subheader bg-magenta text-white py-2 mx-0">Teaching</h4>
       <div class="card-body py-4">
           <p class="card-text text">{{ card.description }}</p>
-          <!-- <a href="{{ card.url }}" class="btn btn-cyan-tl mt-2 py-1">{{ card.url_text }}</a> -->
       </div>
     </div>
   </div>
@@ -29,26 +28,26 @@ active_menu_title: "Teaching"
           <div class="mt-5 text-left">
             {% assign name = entry_group.name %}
             {% if name == "" %}{% break %}{% endif %}
-            <h4 class="heading font-weight-700"><span class="k-border-gray">{{name}}</span></h4>
+            <h4 class="heading font-weight-700"><span class="k-border-magenta">{{name}}</span></h4>
           </div>
         </div>
       </div>
 
       {% for entry in entry_group.items %}
         <div class="row cols-md-space cols-sm-space cols-xs-space mb-0 bg-white">
-          <div class="col-lg-3 pt-4 pb-3 mb-0">
+          <div class="col-lg-3 pl-sm-0 order-xl-1 order-lg-1 order-md-1 order-sm-2 px-md-3 px-sm-3 pt-4 mb-0">
             {% if entry.note.image != nil %}
-              <img alt="Teaching teaser" src="{{entry.note.image | prepend: site.url }}" class="img-fluid img-left rounded" style="{% if entry.image_outline != nil %}border: 1px solid #ecedef;{% endif %}">
+              <img alt="Teaching teaser" src="{{entry.note.image | prepend: site.url }}" class="img-fluid img-left" style="{% if entry.image_outline != nil %}border: 1px solid #ecedef;{% endif %} max-height: 350px;">
             {% else %}
               {% if site.data.teaching.image_placeholder_settings.use_random_online == true %}
-              <img alt="Teaching teaser" src="https://picsum.photos/350/350/?grayscale" class="img-fluid img-left rounded">
+              <img alt="Teaching teaser" src="https://picsum.photos/350/350/?grayscale" class="img-fluid img-left">
               {% else %}
-              <img alt="Teaching teaser" src="{{ site.data.teaching.image_placeholder_settings.local_placeholder | prepend: site.url }}" class="img-fluid img-left rounded">
+              <img alt="Teaching teaser" src="{{ site.data.teaching.image_placeholder_settings.local_placeholder | prepend: site.url }}" class="img-fluid img-left">
               {% endif %}
             {% endif %}
 
           </div>
-          <div class="col-lg-9 pl-lg-5 pl-sm-0 pt-4 pb-3">
+          <div class="col-lg-9 pl-lg-5 pl-sm-0 order-xl-2 order-sm-1 px-md-3 px-sm-3 pt-4 pb-3">
             <div class="card border-0">
               <div class="">
                 <h4 class="k-subheader">{{entry.note.title}}</h4>

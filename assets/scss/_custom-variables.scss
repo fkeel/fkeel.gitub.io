@@ -1,5 +1,3 @@
-
-
 /*
 
 Copy and paste the variables that you want to modify from _variables.scss. The default ones will be overridden.
@@ -35,7 +33,6 @@ $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #859900;
 
-
 $magenta-l:  #ecc2d6; // calculated from rgba($magenta, 25%)
 $magenta-ll: #f2d3e1; // calculated from rgba($magenta, 12.5%)
 $cyan-l:     #c5dfdd; // calculated from rgba($cyan, 25%)
@@ -43,10 +40,14 @@ $cyan-ll:    #d6e8e7; // calculated from rgba($cyan, 12.5%)
 $gray-ll:    #d2d4d7; // calculated from rgba($gray, 12.5%)
 $magenta-tl: #c44680; // calculated from rgba($magenta, 75%)
 $cyan-tl:    #4e9f98; // calculated from rgba($cyan, 75%)
+$base:       #042b36cc;
+$base-l:     #042b363f;
+$base-ll:    #042b361f;
 
 // Standard color map
 $colors: ();
 $colors: map-merge((
+  "base":       $base,
   "base1":      $base1,
   "base2":      $base2,
   "base3":      $base3,
@@ -90,6 +91,7 @@ $theme-colors: map-merge((
   "danger":       $danger,
   "light":        $light,
   "dark":         $dark,
+  "base":       $base,
   "base1":      $base1,
   "base2":      $base2,
   "base3":      $base3,
@@ -112,50 +114,18 @@ $theme-colors: map-merge((
   "cyan":       $cyan,
   "white":      $white,
   "gray":       $gray-600,
-  "magenta-l":     $magenta-l,
-  "magenta-ll":     $magenta-ll,
-  "cyan-l":     $cyan-l,
+  "magenta-l":   $magenta-l,
+  "magenta-ll":  $magenta-ll,
+  "cyan-l":      $cyan-l,
   "cyan-ll":     $cyan-ll,
   "gray-ll":     $gray-ll,
-  "magenta-tl":     $magenta-tl,
+  "magenta-tl":  $magenta-tl,
   "cyan-tl":     $cyan-tl,
-  // "gray-l":     rgba($gray-600, 25%),
-  // "gray-lll":     rgba($gray-600, 5%),
-  // "base03-l":      rgba($base03, 25%),
-  // "base03-ll":      rgba($base03, 12.5%),
-  // "base03-lll":      rgba($base03, 5%),
-  // "base02-l":      rgba($base02, 25%),
-  // "base02-ll":      rgba($base02, 12.5%),
-  // "base02-lll":      rgba($base02, 5%),
-  // "blue-l":     rgba($blue, 25%),
-  // "violet-l":     rgba($violet, 25%),
-  // "yellow-l":     rgba($yellow, 25%),
-  // "red-l":     rgba($red, 25%),
-  // "orange-l":     rgba($orange, 25%),
-  // "green-l":     rgba($green, 25%),
-  // "blue-ll":     rgba($blue, 12.5%),
-  // "violet-ll":     rgba($violet, 12.5%),
-  // "yellow-ll":     rgba($yellow, 12.5%),
-  // "red-ll":     rgba($red, 12.5%),
-  // "orange-ll":     rgba($orange, 12.5%),
-  // "green-ll":     rgba($green, 12.5%),
-  // "blue-lll":     rgba($blue, 5%),
-  // "violet-lll":     rgba($violet, 5%),
-  // "yellow-lll":     rgba($yellow, 5%),
-  // "magenta-lll":     rgba($magenta, 5%),
-  // "red-lll":     rgba($red, 5%),
-  // "orange-lll":     rgba($orange, 5%),
-  // "green-lll":     rgba($green, 5%),
-  // "cyan-lll":     rgba($cyan, 5%),
-  // "blue-tl":     rgba($blue, 75%),
-  // "violet-tl":     rgba($violet, 75%),
-  // "yellow-tl":     rgba($yellow, 75%),
-  // "red-tl":     rgba($red, 75%),
-  // "orange-tl":     rgba($orange, 75%),
-  // "green-tl":     rgba($green, 75%),
+  "base-l":      $base-l,
+  "base-ll":     $base-ll
 ), $theme-colors);
 
-$link-color:                $cyan;
+$link-color:                $blue;
 $link-decoration:           none;
 $link-hover-color:          darken($link-color, 25%);
 $link-hover-decoration:     unone;
@@ -243,17 +213,3 @@ $hr-margin-y:                 $spacer;
 
 $nav-link-padding-y:          .15rem;
 $nav-link-padding-x:          .75rem;
-
-// Solarized mixins
-@mixin rebase($rebase03,$rebase02,$rebase01,$rebase00,$rebase0,$rebase1,$rebase2,$rebase3)
-{
-    background-color:$rebase03;
-    color:$rebase0;
-    * { color:$rebase0; }
-    h1,h2,h3,h4,h5,h6 { color:$rebase1; border-color: $rebase0; }
-    a, a:active, a:visited { color: $rebase1; }
-}
-@mixin accentize($accent) {
-    a, a:active, a:visited, code.url { color: $accent; }
-    h1,h2,h3,h4,h5,h6 {color:$accent}
-}
