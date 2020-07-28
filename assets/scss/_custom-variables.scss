@@ -40,6 +40,9 @@ $cyan-ll:    #d6e8e7; // calculated from rgba($cyan, 12.5%)
 $gray-ll:    #d2d4d7; // calculated from rgba($gray, 12.5%)
 $magenta-tl: #c44680; // calculated from rgba($magenta, 75%)
 $cyan-tl:    #4e9f98; // calculated from rgba($cyan, 75%)
+$blue-l:     rgba($blue, 0.25);
+$blue-ll:    rgba($blue, 0.125);
+$blue-tl:    rgba($blue, 0.75);
 $base:       #042b36cc;
 $base-l:     #042b363f;
 $base-ll:    #042b361f;
@@ -122,7 +125,9 @@ $theme-colors: map-merge((
   "magenta-tl":  $magenta-tl,
   "cyan-tl":     $cyan-tl,
   "base-l":      $base-l,
-  "base-ll":     $base-ll
+  "base-ll":     $base-ll,
+  "blue-l":      $blue-l,
+  "blue-ll":     $blue-ll
 ), $theme-colors);
 
 $link-color:                $blue;

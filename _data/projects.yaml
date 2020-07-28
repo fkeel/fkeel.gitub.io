@@ -1,3 +1,14 @@
-- title: Sample
-  url: /projects/sample
-  hidden: false
+intro: "Gaze upon my creation"
+
+timeline:
+  - title: "From Pulse Trains to “Coloring with Vibrations”: Motion Mappings for Mid-Air Haptic Textures"
+    year: 2018
+    authors: Paul Strohmeier
+    description: Neque duis elementum rutrum parturient facilisi iaculis posuere, pretium cubilia himenaeos potenti vitae auctor magnis, cursus eros aenean nec proin elit. Ex nisl malesuada dis habitasse fringilla ligula adipiscing eu sit, potenti feugiat vulputate proin dictum hac gravida penatibus diam tempus, elit vel sapien volutpat laoreet ut convallis nisi.
+    image:
+    tags:
+      - text: Such Project, Much Wow
+        style: magenta
+    links:
+      - name: View Project
+        url: /projects/sample

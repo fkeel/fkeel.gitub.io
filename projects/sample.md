@@ -1,10 +1,10 @@
 ---
 layout: project
-title: Projects | Sample Project
-active_menu_title: "Projects"
-nav-bg: bg-base03
+title: Projects | Sample Project #page title
+active_menu_title: "Projects" #menu highlight
+card_title: Sample Project #card title
+card_description: "Enim orci dolor auctor commodo pellentesque primis rhoncus erat interdum nostra nisi habitasse, vulputate eu faucibus velit vitae dictumst felis parturient ultricies egestas tristique dignissim mollis, eleifend praesent cursus purus pulvinar suspendisse diam integer ultrices suscipit turpis." #card description
 ---
-
 
 An h1 header
 ============

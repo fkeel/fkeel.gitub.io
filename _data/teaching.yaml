@@ -1,9 +1,4 @@
-intro: I believe learning is an active process and I believe trying and failing and trying again is an important part of it. I enjoy providing students with the tools and resources they need to teach themselves, and guiding them based on my own learning experiences.
-
-image_placeholder_settings:
-  local_placeholder: /assets/images/placeholders/teaching.png # placeholder image for entries without image property
-  use_random_online: true #use random online image instead of local_placeholder
-
+intro: One sentence description of the teaching page may make sense here.
 
 timeline:
   -   year: 2017

@@ -11,21 +11,20 @@ base_title: Paul Strohmeier
 current_year: 2020
 
 meta:
-  description: "Personal Website of Paul Strohmeier"
+  description: "Personal Website of Paul Strohmeier, PhD"
   keywords: "Paul Strohmeier, Research, Portfolio"
   author: Paul Strohmeier
 
 #   Change the corresponding *.html file name in root folder after editing the menu url shortcut
 #   For instance:
 #   '/research' url will open 'reseach.html' page and will be displayed in the browser as [website_url]/research
-
 menu:
   - title: Home
     url: /
   - title: Research
     url: /research
- #- title: Projects
- #   url: /projects
+  # - title: Projects
+  #    url: /projects
   - title: Teaching
     url: /teaching
   - title: Bio
@@ -36,8 +35,11 @@ menu:
 contact:
   email: paul.strohmeier@gmail.com
   github: https://github.com/fkeel
-  # facebook:
-  # instagram:
+
+
+image_placeholder_settings:
+  local_placeholder: /assets/images/placeholders/stripes-transparent.png # placeholder image for entries without image property
+  use_random_online: false #use random online image instead of local_placeholder
 
 tag_styles:
   - name: green

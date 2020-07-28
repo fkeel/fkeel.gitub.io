@@ -7,11 +7,10 @@ active_menu_title: "Teaching"
 
 <div class="row">
   <div class="offset-xl-6 col-xl-6 offset-md-0 col-md-12">
-    {% assign card = site.data.homepage.cards.three %}
     <div class="card card-pricing border-0 bg-magenta-ll py-0">
-      <h4 class="mb-0 pl-4 mt-0 k-subheader bg-magenta text-white py-2 mx-0">Teaching</h4>
+      <h4 class="mb-0 pl-4 mt-0 k-subheader bg-magenta text-white py-2 mx-0">{{ page.title }}</h4>
       <div class="card-body py-4">
-          <p class="card-text text">{{ card.description }}</p>
+          <p class="card-text text">{{ site.data.teaching.intro }}</p>
       </div>
     </div>
   </div>
@@ -39,10 +38,10 @@ active_menu_title: "Teaching"
             {% if entry.note.image != nil %}
               <img alt="Teaching teaser" src="{{entry.note.image | prepend: site.url }}" class="img-fluid img-left" style="{% if entry.image_outline != nil %}border: 1px solid #ecedef;{% endif %} max-height: 350px;">
             {% else %}
-              {% if site.data.teaching.image_placeholder_settings.use_random_online == true %}
+              {% if site.data.website.image_placeholder_settings.use_random_online == true %}
               <img alt="Teaching teaser" src="https://picsum.photos/350/350/?grayscale" class="img-fluid img-left">
               {% else %}
-              <img alt="Teaching teaser" src="{{ site.data.teaching.image_placeholder_settings.local_placeholder | prepend: site.url }}" class="img-fluid img-left">
+              <img alt="Teaching teaser" src="{{ site.data.website.image_placeholder_settings.local_placeholder | prepend: site.url }}" class="img-fluid img-left">
               {% endif %}
             {% endif %}
 

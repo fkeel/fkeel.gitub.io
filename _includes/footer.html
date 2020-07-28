@@ -41,7 +41,12 @@
           {% endif %}
           {% if site.data.website.contact.github %}
             <li class="nav-item">
-              <a class="nav-link" href="https://github.com/webpixels" target="_blank"><i class="fab fa-github"></i></a>
+              <a class="nav-link" href="https://github.com/webpixels" target="_blank"><i class="fab fa-github-square"></i></a>
+            </li>
+          {% endif %}
+          {% if site.data.website.contact.email %}
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:{{ site.data.website.contact.email }}" target="_blank"><i class="fas fa-envelope-square"></i></a>
             </li>
           {% endif %}
         </ul>

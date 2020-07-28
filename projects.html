@@ -1,30 +1,30 @@
 ---
 layout: page
-title: Research
-active_menu_title: "Research"
+title: Projects
+active_menu_title: "Projects"
 ---
 
 <div class="row">
   <div class="offset-xl-6 col-xl-6 offset-md-0 col-md-12">
-    <div class="card card-pricing border-0 bg-cyan-ll py-0">
-      <h4 class="mb-0 pl-4 mt-0 k-subheader bg-cyan text-white py-2 mx-0">{{ page.title }}</h4>
+    <div class="card card-pricing border-0 bg-blue-ll py-0">
+      <h4 class="mb-0 pl-4 mt-0 k-subheader bg-blue text-white py-2 mx-0">{{ page.title }}</h4>
       <div class="card-body py-4">
-          <p class="card-text text">{{ site.data.research.intro }}</p>
+          <p class="card-text text">{{ site.data.projects.intro }}</p>
       </div>
     </div>
   </div>
 </div>
 
-{% assign unsorted_research_data = site.data.research.timeline | group_by: 'year' %}
-{% assign research_data = unsorted_research_data | sort: 'name' | reverse %}
+{% assign unsorted_data = site.data.projects.timeline | group_by: 'year' %}
+{% assign project_data = unsorted_data | sort: 'name' | reverse %}
 
-{% for research_entry_group in research_data %}
-  {% assign group_size = research_entry_group.size %}
+{% for group in project_data %}
+  {% assign group_size = group.size %}
   <section class="slice slice-lg pb-0">
     <div class="row bg-wh" >
       <div class="col-12">
         <div class="mt-4 text-left">
-          {% assign name = research_entry_group.name %}
+          {% assign name = group.name %}
           {% if name == "" %}{% break %}{% endif %}
           <h4 class="heading font-weight-700"><span class="k-border-cyan">{{name}}</span></h4>
         </div>
@@ -32,7 +32,7 @@ active_menu_title: "Research"
     </div>
 
     {% assign i = 0 %}
-    {% for research_entry in research_entry_group.items %}
+    {% for research_entry in group.items %}
       {% assign i = i | plus:1 %}
       <div class="row cols-md-space cols-sm-space cols-xs-space mb-0 bg-white">
         <div class="col-lg-3 pl-sm-0 order-xl-1 order-lg-1 order-md-1 order-sm-2 px-md-3 px-sm-3 pt-4 mb-0">
@@ -56,9 +56,9 @@ active_menu_title: "Research"
                 {% assign tag_style = site.data.website.tag_styles | where: "name",style | limit:1 %}
                 <span class="badge badge-lg badge-pill {{ tag_style[0].css }} text-uppercase mb-1" style="{% if tag.style %}{{ tag.style }}{% endif %}">{{tag.text}}</span>
               {% endfor %}
-              <p class="mt-3"><i>{{research_entry.authors}} in {{research_entry.venue}}</i></p>
+              <p class="mt-3"><i>{{research_entry.authors}}</i></p>
               <p class="mt-3">{{research_entry.description}}</p>
-              Links:
+
               {% for link in research_entry.links %}
                 <a href="{{link.url | prepend: site.url }}">
                   <span class="badge badge-lg badge-pill btn-blue border-0 text-uppercase mb-1">{{link.name}}</span>
@@ -68,7 +68,7 @@ active_menu_title: "Research"
           </div>
         </div>
       </div>
-      {% comment %} {% if i != research_entry_group.items.size %}<hr>{% endif %} {% endcomment %}
+      {% comment %} {% if i != group.items.size %}<hr>{% endif %} {% endcomment %}
     {% endfor %}
   </section>
 {% endfor %}

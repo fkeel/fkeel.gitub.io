@@ -23,6 +23,11 @@
           <a class="nav-link nav-link-icon" href="{{ site.data.website.contact.github }}" target="_blank"><i class="fab fa-github"></i><span class="ml-2 d-lg-none">Github</span></a>
         </li>
         {% endif %}
+        {% if site.data.website.contact.email %}
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:{{ site.data.website.contact.email }}" target="_blank"><i class="fas fa-envelope"></i></a>
+            </li>
+          {% endif %}
       </ul>
     </div>
   </div>
