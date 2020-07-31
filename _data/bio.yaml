@@ -1,15 +1,15 @@
 timeline:
     - name: Formal education
       items:
+        - year: 2019
+          note: PhD in Computer Science from the University of Copenhagen, Denmark
+          context: 2013-2015, work on Body-Based UI, and Tactile Perception
+          # context: since 2013
         - year: 2017
           note: Visiting Researcher at the Responsive Environments group of the MIT Media Lab
           context: Winter
         - year: 2015
           note: MSc from Queen’s University in Canada
-        - year: 2015
-          note: PhD Fellow at the University of Copenhagen, Denmark
-          context: Optional text
-          # context: since 2013
         - year: 2013
           note: BA (Hons.) from University College Maastricht, Maastricht University, The Netherlands
           context: Optional text
