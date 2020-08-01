@@ -1,9 +1,9 @@
 # left column
 about:
-  image: /uploads/image/2016_Reflex-350x350-m.jpg
+  image: /uploads/image/title_image.jpg
   title: About
   description: |
-    My name is Paul and this is my website.
+    This is me, presenting wearable concepts at TEI2019
 
 # middle column
 updates:
