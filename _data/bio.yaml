@@ -42,8 +42,12 @@ timeline:
             note: Undergraduate Researcher at Department of Knowledge Engineering, University Maastricht, The Netherlands
             context: Research into human robot interaction, wearable robot controllers
 
-    - name: Talks
+    - name: Invited Talks 
       items:
+        -   year: 2018
+            note: "Lightning Talk at <a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=18322">Dagstuhl Seminar on Human-Computer Integration</a>"
+        -   year: 2018
+            note: "Lightning Talk at <a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=18212">Dagstuhl Seminar on On-Body Interaction</a>"
         -   year: 2018
             note: "Guest Talk at the HCI Group Saarbruecken: Textiles/Space/Touch, Saarbruecken, Germany"
         -   year: 2017
