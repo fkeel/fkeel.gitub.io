@@ -18,9 +18,9 @@ timeline:
 
     - name: Research experience
       items:
-              - year: 2020
-          note: Post-Doctorial Researcher at the Human Computer Interaction Lab of Saarland University
-          context: Since 2019, Ongoing
+        -   year: 2020
+            note: Post-Doctorial Researcher at the Human Computer Interaction Lab of Saarland University
+            context: Since 2019, Ongoing
         -   year: 2019
             note: PhD Fellow at the University of Copenhagen’s Human Centred Computing group, Denmark (Body-Based UI)
             context: Contributed to ERC Grant for research on Body Based User Interfaces
