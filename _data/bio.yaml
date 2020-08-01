@@ -33,17 +33,21 @@ timeline:
             #context: "2013-2015"
         -   year: 2014
             note: Research Coordinator, Cybermedic, Paris/London (research into bio-compatible battery technologies for body modifications)
-            context: Research into battery technologies for new Human Interfaces
+            context: Investigating battery technologies for new Human Interfaces
             #context: "2012-2014"
         -   year: 2011
             note: Research Fellow at the Human Media Lab, Queen’s University, Canada
             context: Prototyping multi-display interaction environments
         -   year: 2010
             note: Undergraduate Researcher at Department of Knowledge Engineering, University Maastricht, The Netherlands
-            context: Research into human robot interaction, wearable robot controllers
+            context: Research into Human-Robot interaction, wearable robot controllers
 
     - name: Talks
       items:
+        -   year: 2018
+            note: "Lightning Talk at <a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=18322">Dagstuhl Seminar on Human-Computer Integration</a>"
+        -   year: 2018
+            note: "Lightning Talk at <a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=18212">Dagstuhl Seminar on On-Body Interaction</a>"
         -   year: 2018
             note: "Guest Talk at the HCI Group Saarbruecken: Textiles/Space/Touch, Saarbruecken, Germany"
         -   year: 2017
@@ -58,7 +62,7 @@ timeline:
             note: "Talk at the ‘Second Generation and Start-Ups’ conference on Designing User Interfaces for the Body, Hongzhou, China"
         -   year: 2016
             note: "Guest Talk at ITU, Denmark on Body-UI and Sensory Expansion"
-        -   year: 2016
+        -   year: 2015
             note: Global Entrepreneurship Week, Maastricht, The Netherlands
         -   year: 2013
             note: Presentation of PaperTab at IFP Media Center / Founders Forum, NYC, USA
