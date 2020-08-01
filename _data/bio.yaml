@@ -45,7 +45,7 @@ timeline:
     - name: Invited Talks 
       items:
         -   year: 2018
-            note: "Lightning Talk at <a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=18322">Dagstuhl Seminar on Human-Computer Integration</a>"
+            note: "Lightning Talk at 
         -   year: 2018
             note: "Lightning Talk at <a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=18212">Dagstuhl Seminar on On-Body Interaction</a>"
         -   year: 2018
