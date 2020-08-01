@@ -1,7 +1,7 @@
 # left column
 about:
   image: /uploads/image/title_image.jpg
-  title: About
+  title: 
   description: |
     This is me, presenting wearable concepts at TEI2019
 
@@ -28,7 +28,7 @@ cards:
   two:
     title: Bio
     description: |
-      I have PhD in “Datalogi” from the University of Copenhagen, a MSc in Computer Science from Queen’s University, Canada and a BA in Philosophy of Technology from University College Maastricht.
+      I have PhD in Computer Science from the University of Copenhagen, a MSc in Computer Science from Queen’s University, Canada and a BA in Philosophy of Technology from University College Maastricht.
     url: /bio
     url_text: View Bio
     visible: true
@@ -36,7 +36,7 @@ cards:
   three:
     title: Teaching
     description: |
-      One sentence description of the teaching page may make sense here.
+      I am passionate about teaching others how to learn. I have taught and designed University level, high-school as well as corporate courses.
     url: /teaching
     url_text: View Teaching
     visible: true
