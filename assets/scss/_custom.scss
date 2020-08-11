@@ -93,9 +93,18 @@ $timeline-year-color: gray;
       background: $timeline-color;
     }
   }
+  // p.year-delimiter {
+  //   position: absolute;
+  //   top: 20px;
+  //   left: 16px;
+  //   margin: 0;
+  //   font-weight: 300;
+  //   position: absolute;
+  //   top: 20px;
+  // }
   h3 {
     position: -webkit-sticky;
-    position: sticky;
+    // position: sticky;
     top: 5rem;
     color: $timeline-year-color;
     margin: 0;
@@ -105,6 +114,15 @@ $timeline-year-color: gray;
     }
     @media (min-width: 62em) {
       // font-size: 1.1em;
+    }
+    &.year-from {
+      &:before{
+        content: '~';
+      }
+      font-size: 0.8em;
+      font-weight: 300;
+      position: absolute;
+      top: 23px;
     }
   }
   section.year {
