@@ -14,8 +14,8 @@ active_menu_title: "Updates"
     <div class="col-xl-8 offset-xl-0 col-md-12 offset-md-0">
       {% assign home_updates = site.data.updates %}
       {% for data in home_updates %}
-      <div class="card card-pricing mb-4 border-0 bg-lightest mb-5">
-          <div class="card-body px-5 py-4">
+      <div class="card card-pricing border-0 bg-lightest mb-5">
+          <div class="card-body px-2 px-sm-5 py-4">
               <h5 class="heading heading-5 strong-600 mb-4">{{ data.date }}</h5>
               <p class="card-text">{{ data.content }}</p>
           </div>
