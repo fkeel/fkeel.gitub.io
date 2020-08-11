@@ -57,7 +57,7 @@ active_menu_title: "Home"
       {% assign card = site.data.homepage.cards.two %}
       {% if card.visible == true %}
       <div class="card card-pricing border-0 bg-base-ll mb-4">
-        <h5 class="mb-0 pl-4 k-subheader bg-base text-white py-2">{{ card.title }}</h5>
+        <h5 class="mb-0 pl-4 k-subheader bg-base bg-base-opacity-override text-white py-2">{{ card.title }}</h5>
         <div class="card-body pt-3">
             <h5 class="heading heading-5 strong-600"></h5>
             <p class="card-text text">{{ card.description }}</p>
