@@ -327,6 +327,7 @@ timeline:
 
   - title: "A Flock of Birds: bringing paper to life"
     year: 2012
+    image: false
     authors: Paul Strohmeier, Kaja Vembe Swensen, Cameron Lapp, Audrey Girouard, Roel Vertegaal
     venue: Tangible, Embedded and Embodied Interaction (TEI)
     tags:
@@ -338,6 +339,7 @@ timeline:
 
   - title: "Mood fern: exploring shape transformations in reactive environments"
     year: 2014
+    hidden: true
     authors: Bernard Cheng, Antonio Gomes, Paul Strohmeier, Roel Vertegaal
     venue: Advances in Computer Entertainment Technology (ACE)
     tags:
