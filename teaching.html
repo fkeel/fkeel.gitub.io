@@ -67,7 +67,7 @@ active_menu_title: "Teaching"
                 {% if entry.note.links != nil %}
                     Links:
                     {% for link in entry.note.links %}
-                      <a href="{{link.url | prepend: site.url }}">
+                      <a href="{{link.url}}">
                         <span class="badge badge-lg badge-pill btn-blue border-0 text-uppercase mb-1">{{link.name}}</span>
                       </a>
                     {% endfor%}
