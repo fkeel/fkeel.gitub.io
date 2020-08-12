@@ -286,6 +286,7 @@ timeline:
 
   - title: "Special Topic: Taking Action in a Changing World."
     year: 2017
+    image: false
     authors: Ann Light, Chris Frauenberger, Jennifer Preece, Paul Strohmeier, and Maria Angela Ferrario (2017)
     venue: ACM Interactions Magazine
     tags:
@@ -297,6 +298,7 @@ timeline:
 
   - title: "Casey Fiesler, Lisa Anthony, Paul Strohmeier, Susan Fussell, Gloria Mark"
     year: 2017
+    image: false
     authors: "Taking Action in a Changing World: Research and Community"
     venue: Extended Abstracts on Human Factors in Computing Systems (CHI EA)
     tags:
@@ -305,6 +307,7 @@ timeline:
 
   - title: "Second Skin: An Exploration of eTextile Stretch Circuits on the Body"
     year: 2017
+    image: false
     authors: Rachel Freire, Cedric Honnet, Paul Strohmeier
     venue: Tangible, Embedded and Embodied Interaction (TEI)
     tags:
@@ -316,6 +319,7 @@ timeline:
 
   - title: "Exploring Bodies, Mediation and Points of View using a Robotic Avatar"
     year: 2016
+    image: false
     authors: Paul Strohmeier
     venue: Tangible, Embedded and Embodied Interaction (TEI)
     tags:
@@ -339,7 +343,8 @@ timeline:
 
   - title: "Mood fern: exploring shape transformations in reactive environments"
     year: 2014
-    hidden: true
+    # hidden: true
+    image: false
     authors: Bernard Cheng, Antonio Gomes, Paul Strohmeier, Roel Vertegaal
     venue: Advances in Computer Entertainment Technology (ACE)
     tags:
