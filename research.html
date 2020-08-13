@@ -15,6 +15,7 @@ active_menu_title: "Research"
   </div>
 </div>
 
+
 {% assign unsorted_research_data = site.data.research.timeline | group_by: 'year' %}
 {% assign research_data = unsorted_research_data | sort: 'name' | reverse %}
 
@@ -32,6 +33,7 @@ active_menu_title: "Research"
       </div>
     </div>
 
+	
 	
     {% assign i = 0 %}
     {% for research_entry in research_entry_group.items %}
