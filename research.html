@@ -18,11 +18,12 @@ active_menu_title: "Research"
 {% assign unsorted_research_data = site.data.research.timeline | group_by: 'year' %}
 {% assign research_data = unsorted_research_data | sort: 'name' | reverse %}
 
+
 {% for research_entry_group in research_data %}
   {% assign group_size = research_entry_group.size %}
   <section class="slice slice-lg pb-0">
     <div class="row bg-wh" >
-      <div class="col-12">
+      <div class="offset-xl-1 col-xl-10 offset-md-0 col-md-12">
         <div class="mt-4 text-left">
           {% assign name = research_entry_group.name %}
           {% if name == "" %}{% break %}{% endif %}
@@ -31,6 +32,7 @@ active_menu_title: "Research"
       </div>
     </div>
 
+	
     {% assign i = 0 %}
     {% for research_entry in research_entry_group.items %}
       {% assign i = i | plus:1 %}

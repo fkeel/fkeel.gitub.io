@@ -121,6 +121,9 @@ timeline:
             style: magenta
         authors: "Paul Strohmeier, Antonio Gomes, Giovanni Maria Troiano, Aske Mottelson, Timothy Merritt, Jason Alexander"
         venue: Extended Abstracts on Human Factors in Computing Systems (CHI EA)
+        links:
+          - name: web
+            url: http://embodimentlabs.org/shapechangingui/
 
   -   year: 2015
       note:
