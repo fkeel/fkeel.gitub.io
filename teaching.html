@@ -33,15 +33,18 @@ active_menu_title: "Teaching"
       </div>
 
       {% for entry in entry_group.items %}
+        {% if entry.note.hidden == true %}{% continue %}{% endif %}
         <div class="row cols-md-space cols-sm-space cols-xs-space mb-0 bg-white">
           <div class="col-lg-3 pl-sm-0 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2 px-md-3 px-sm-3 pt-4 mb-5 mb-lg-0">
-            {% if entry.note.image != nil %}
-              <img alt="Teaching teaser" src="{{entry.note.image | prepend: site.url }}" class="img-fluid img-left mb-5 mb-lg-0" style="{% if entry.image_outline != nil %}border: 1px solid #ecedef;{% endif %} max-height: 350px;">
-            {% else %}
-              {% if site.data.website.image_placeholder_settings.use_random_online == true %}
-              <img alt="Teaching teaser" src="https://picsum.photos/350/350/?grayscale" class="img-fluid img-left mb-5 mb-lg-0">
+            {% if entry.note.image != false %}
+              {% if entry.note.image != nil %}
+                <img alt="Teaching teaser" src="{{entry.note.image | prepend: site.url }}" class="img-fluid img-left mb-5 mb-lg-0" style="{% if entry.image_outline != nil %}border: 1px solid #ecedef;{% endif %} max-height: 350px;">
               {% else %}
-              <img alt="Teaching teaser" src="{{ site.data.website.image_placeholder_settings.local_placeholder | prepend: site.url }}" class="img-fluid img-left mb-5 mb-lg-0">
+                {% if site.data.website.image_placeholder_settings.use_random_online == true %}
+                <img alt="Teaching teaser" src="https://picsum.photos/350/350/?grayscale" class="img-fluid img-left mb-5 mb-lg-0">
+                {% else %}
+                <img alt="Teaching teaser" src="{{ site.data.website.image_placeholder_settings.local_placeholder | prepend: site.url }}" class="img-fluid img-left mb-5 mb-lg-0">
+                {% endif %}
               {% endif %}
             {% endif %}
 
@@ -67,7 +70,7 @@ active_menu_title: "Teaching"
                 {% if entry.note.links != nil %}
                     Links:
                     {% for link in entry.note.links %}
-                      <a href="{{link.url | prepend: site.url }}">
+                      <a href="{{link.url}}">
                         <span class="badge badge-lg badge-pill btn-blue border-0 text-uppercase mb-1">{{link.name}}</span>
                       </a>
                     {% endfor%}

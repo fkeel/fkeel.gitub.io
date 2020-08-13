@@ -28,6 +28,10 @@ a.nav-link.bg-white:hover {
   background-color: rgba(04,43,54,0.8) !important;
 }
 
+.bg-base-opacity-override {
+  opacity: 0.97;
+}
+
 section.slice {
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -89,9 +93,18 @@ $timeline-year-color: gray;
       background: $timeline-color;
     }
   }
+  // p.year-delimiter {
+  //   position: absolute;
+  //   top: 20px;
+  //   left: 16px;
+  //   margin: 0;
+  //   font-weight: 300;
+  //   position: absolute;
+  //   top: 20px;
+  // }
   h3 {
     position: -webkit-sticky;
-    position: sticky;
+    // position: sticky;
     top: 5rem;
     color: $timeline-year-color;
     margin: 0;
@@ -101,6 +114,15 @@ $timeline-year-color: gray;
     }
     @media (min-width: 62em) {
       // font-size: 1.1em;
+    }
+    &.year-from {
+      &:before{
+        content: '~';
+      }
+      font-size: 0.8em;
+      font-weight: 400;
+      position: absolute;
+      top: 23px;
     }
   }
   section.year {
@@ -114,10 +136,16 @@ $timeline-year-color: gray;
     padding-bottom: 1.5em;
     margin-bottom: 0.5em;
     &.with-context {
-      margin-bottom: 2.2em !important;
+      // margin-bottom: 2.2em !important;
+      @media (max-width: 767px) {
+        // padding-bottom: 2.5em;
+        margin-bottom: 1.5em;
+
+        // height: 100%;
+      }
     }
     h4 {
-      position: absolute;
+      // position: absolute;
       bottom: 0;
       font: {
         size: .9em;
@@ -125,11 +153,15 @@ $timeline-year-color: gray;
       }
       line-height: 1.2em;
       margin: 0;
-      padding: 0 0 0 88px;
+      // padding: 0 0 0 88px;
 
       // color: $timeline-color;
       @media (min-width: 62em) {
         // font-size: 1em;
+      }
+      @media (max-width: 767px) {
+        // margin-top: 2rem !important;
+        // padding: 0 0 0 84px;
       }
     }
     ul {
@@ -161,12 +193,17 @@ $timeline-year-color: gray;
       }
       li {
         margin-left: .5rem;
-        &:before {
-          content: '';
-          margin-left: -.5rem;
-          padding-right: .3rem;
-        }
+        // &:first-child{
+          @media (max-width: 767px) {
+            &:before {
+              // content: '';
+              margin-left: -.5rem;
+              padding-right: .3rem;
+            }
+          }
+        // }
         &:not(:first-child) {
+
           margin-top: .5rem;
         }
         span.highlight {
