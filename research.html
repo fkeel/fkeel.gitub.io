@@ -5,7 +5,7 @@ active_menu_title: "Research"
 ---
 
 <div class="row">
-  <div class="offset-xl-3 col-xl-9 offset-md-0 col-md-12">
+  <div class="offset-xl-2 col-xl-10 offset-md-0 col-md-12">
     <div class="card card-pricing border-0 bg-cyan-ll py-0">
       <h4 class="mb-0 pl-4 mt-0 k-subheader bg-cyan text-white py-2 mx-0">{{ page.title }}</h4>
       <div class="card-body py-4">
@@ -39,7 +39,7 @@ active_menu_title: "Research"
     {% for research_entry in research_entry_group.items %}
       {% assign i = i | plus:1 %}
       <div class="row cols-md-space cols-sm-space cols-xs-space mb-0 bg-white">
-        <div class="col-lg-3 pl-sm-0 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2 px-md-3 px-sm-3 pt-4 mb-5 mb-lg-0">
+        <div class="col-lg-2 pl-sm-0 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2 px-md-3 px-sm-3 pt-4 mb-5 mb-lg-0">
 
           {% if research_entry.image != nil %}
               <img alt="Research teaser" src="{{research_entry.image | prepend: site.url }}" class="img-fluid img-left mb-5 mb-lg-0" style="{% if entry.image_outline != nil %}border: 1px solid #ecedef;{% endif %} max-height: 350px;">
@@ -51,7 +51,7 @@ active_menu_title: "Research"
               {% endif %}
             {% endif %}
         </div>
-        <div class="col-lg-9 pl-lg-5 pl-sm-0 order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1 px-md-3 px-sm-3 pt-4 pb-3">
+        <div class="col-lg-8 pl-lg-5 pl-sm-0 order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1 px-md-3 px-sm-3 pt-4 pb-3">
           <div class="card border-0">
             <div class="">
               <h4 class="k-subheader">{{research_entry.title}}</h4>
