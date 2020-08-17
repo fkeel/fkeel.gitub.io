@@ -23,7 +23,7 @@ active_menu_title: "Research"
   
   <section class="slice slice-lg pb-0">
     <div class="row bg-wh" >
-      <div class="offset-xl-1 col-xl-10 offset-md-0 col-md-12">
+      <div class="offset-xl-1 col-xl-8 offset-md-0 col-md-12">
         <div class="mt-4 text-left">
 		
           {% assign name = research_entry_group.name %}
@@ -38,7 +38,7 @@ active_menu_title: "Research"
     {% assign i = 0 %}
     {% for research_entry in research_entry_group.items %}
       {% assign i = i | plus:1 %}
-      <div class="offset-xl-1 col-xl-10 row cols-md-space cols-sm-space cols-xs-space mb-0 bg-white"> %container for all
+      <div class="offset-xl-1 col-xl-10 row cols-md-space cols-sm-space cols-xs-space mb-0 bg-white"> 
         <div class="col-lg-3 pl-sm-0 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2 px-md-3 px-sm-3 pt-4 mb-5 mb-lg-0">
 
           {% if research_entry.image != nil %}
@@ -51,7 +51,7 @@ active_menu_title: "Research"
               {% endif %}
             {% endif %}
         </div>
-        <div class="col-lg-7 pl-lg-5 pl-sm-0 order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1 px-md-3 px-sm-3 pt-4 pb-3">
+        <div class="col-lg-8 pl-lg-5 pl-sm-0 order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1 px-md-3 px-sm-3 pt-4 pb-3">
           <div class="card border-0">
             <div class="">
               <h4 class="k-subheader">{{research_entry.title}}</h4>
