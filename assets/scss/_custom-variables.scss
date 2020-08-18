@@ -43,10 +43,10 @@ $cyan-tl:    #4e9f98; // calculated from rgba($cyan, 75%)
 $blue-l:     rgba($blue, 0.25);
 $blue-ll:    rgba($blue, 0.125);
 $blue-tl:    rgba($blue, 0.75);
-$base:       #042b36cc;
-$base-l:     #042b363f;
-$base-ll:    #042b361f;
-$base-tl:    #042b36bf;
+$base:       rgba(#042b36, 0.8);
+$base-l:     rgba(#042b36, 0.25);
+$base-ll:    rgba(#042b36, 0.125);
+$base-tl:    rgba(#042b36, 0.75);
 
 // Standard color map
 $colors: ();
