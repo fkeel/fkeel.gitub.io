@@ -10,15 +10,6 @@ timeline:
       - text: paper
         style: magenta
     
-    - title: "Eyecam: Revealing Relations between Humans and Sensing Devices through an Anthropomorphic Webcam"
-    year: 2021
-    authors: Marc Teyssier, Marion Koelle, <b>Paul Strohmeier</b>, Bruno Fruchard, and Juergen Steimle.
-    venue: Human Factors in Computing Systems (CHI)
-    description: This project was lead by Marc Teyssier and uses his skill of creating uncanny tech-devices to reveal and discuss assumptions we have about how we interact with technology.
-    tags:
-      - text: paper
-        style: magenta      
-        
 
   - title: "From Pulse Trains to “Coloring with Vibrations”: Motion Mappings for Mid-Air Haptic Textures"
     year: 2018
