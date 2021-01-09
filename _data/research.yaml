@@ -4,13 +4,21 @@ timeline:
   - title: "Skill Sleeves: Designing Electrode Garments for Wearability"
     year: 2021
     authors: Jarrod Knibbe, Rachel Freire, Marion Koelle, and <b>Paul Strohmeier</b>
-    venue: Human Factors in Computing Systems (CHI)
+    venue: Tangible, Embedded, and Embodied Interaction (TEI)
     description: Jarrod and I built a multi-electron sleeve for his research into EMS stimulation. We then invited Rachel Freire to join us in designing an updated version of that sleeve. This paper discusses this process and uses this to discuss the general concept of wearability. It was ages in the making. as Jarrod said "... and all it took was three weeks of writing -- and three years of talking about what to write".
     tags:
       - text: paper
         style: magenta
     
-        
+    - title: "Eyecam: Revealing Relations between Humans and Sensing Devices through an Anthropomorphic Webcam"
+    year: 2021
+    authors: Marc Teyssier, Marion Koelle, <b>Paul Strohmeier</b>, Bruno Fruchard, and
+J¨urgen Steimle.
+    venue: Human Factors in Computing Systems (CHI)
+    description: This project was lead by Marc Teyssier and uses his skill of creating uncanny tech-devices to reveal and discuss assumptions we have about how we interact with technology.
+    tags:
+      - text: paper
+        style: magenta      
         
 
   - title: "From Pulse Trains to “Coloring with Vibrations”: Motion Mappings for Mid-Air Haptic Textures"
