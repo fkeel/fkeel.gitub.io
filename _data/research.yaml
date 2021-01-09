@@ -6,15 +6,10 @@ timeline:
     authors: Jarrod Knibbe, Rachel Freire, Marion Koelle, and <b>Paul Strohmeier</b>
     venue: Human Factors in Computing Systems (CHI)
     description: Jarrod and I built a multi-electron sleeve for his research into EMS stimulation. We then invited Rachel Freire to join us in designing an updated version of that sleeve. This paper discusses this process and uses this to discuss the general concept of wearability. It was ages in the making. as Jarrod said "... and all it took was three weeks of writing -- and three years of talking about what to write".
-    image: /uploads/image/2018_MotionMapping.jpg
     tags:
       - text: paper
         style: magenta
-    links:
-      - name: pdf
-        url: /uploads/pdf/018_CHI_midAirTextures.pdf
-      - name: video
-        url: https://www.youtube.com/watch?v=pJ8MiFiMWHI
+    
         
         
 
