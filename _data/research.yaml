@@ -1,6 +1,6 @@
 intro: "I am interested in human perception and computer sensing. I believe that a solid understanding of perceptive actions will allow us to design new experiences and access to the world."
 
-
+timeline:
   - title: "Skill Sleeves: Designing Electrode Garments for Wearability"
     year: 2021
     authors: Jarrod Knibbe, Rachel Freire, Marion Koelle, and <b>Paul Strohmeier<\b>
@@ -17,7 +17,7 @@ intro: "I am interested in human perception and computer sensing. I believe that
         url: https://www.youtube.com/watch?v=pJ8MiFiMWHI
         
         
-timeline:
+
   - title: "From Pulse Trains to “Coloring with Vibrations”: Motion Mappings for Mid-Air Haptic Textures"
     year: 2018
     authors: Paul Strohmeier , Sebastian Boring and Kasper Hornbæk
