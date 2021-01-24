@@ -37,6 +37,16 @@ timeline:
       - text: paper
         style: magenta
 
+          - title: "bARefoot: Generating Virtual Materials Using Motion Coupled Vibration in Shoes"
+    year: 2020
+    authors: Paul Strohmeier, Seref Gu¨ngo¨r, Luis Herres, Dennis Gudea, Bruno Fruchard, and J¨urgen Steimle.
+    venue: User Interface Software and Technology (UIST '20)
+    description: This paper essentially implements the hypothetical system described in the 'practical implications' section of my thesis. I had lots of help on the hardware and example applications by some very talented students. Bruno designed the experiments together with me and implemented them. This paper is essentially a logical consequence of my 'Generating Haptic Textures' and 'Mid-Air Haptic Textures' papers.
+    tags:
+      - text: paper
+        style: magenta
+        
+        
   - title: "From Pulse Trains to “Coloring with Vibrations”: Motion Mappings for Mid-Air Haptic Textures"
     year: 2018
     authors: Paul Strohmeier , Sebastian Boring and Kasper Hornbæk
