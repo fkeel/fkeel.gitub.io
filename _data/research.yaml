@@ -37,7 +37,7 @@ timeline:
       - text: paper
         style: magenta
 
-          - title: "bARefoot: Generating Virtual Materials Using Motion Coupled Vibration in Shoes"
+  - title: "bARefoot: Generating Virtual Materials Using Motion Coupled Vibration in Shoes"
     year: 2020
     authors: Paul Strohmeier, Seref Gu¨ngo¨r, Luis Herres, Dennis Gudea, Bruno Fruchard, and J¨urgen Steimle.
     venue: User Interface Software and Technology (UIST '20)
