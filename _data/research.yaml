@@ -39,12 +39,50 @@ timeline:
 
   - title: "bARefoot: Generating Virtual Materials Using Motion Coupled Vibration in Shoes"
     year: 2020
-    authors: Paul Strohmeier, Seref Gu¨ngo¨r, Luis Herres, Dennis Gudea, Bruno Fruchard, and J¨urgen Steimle.
+    authors: Paul Strohmeier, Seref Gu¨ngo¨r, Luis Herres, Dennis Gudea, Bruno Fruchard, and Jürgen Steimle.
     venue: User Interface Software and Technology (UIST '20)
     description: This paper essentially implements the hypothetical system described in the 'practical implications' section of my thesis. I had lots of help on the hardware and example applications by some very talented students. Bruno designed the experiments together with me and implemented them. This paper is essentially a logical consequence of my 'Generating Haptic Textures' and 'Mid-Air Haptic Textures' papers.
     tags:
       - text: paper
         style: magenta
+        
+        
+  - title: "PolySense: Augmenting Textiles with Electrical Functionality Using In-Situ Polymerization"
+    year: 2020
+    authors: Cedric Honnet, Hannah Perner-Wilson, Marc Teyssier, Bruno Fruchard, Jürgen Steimle, Ana C. Baptista, and Paul Strohmeier.
+    venue: User Interface Software and Technology (UIST '20)
+    description: 
+    tags:
+      - text: paper
+        style: magenta
+        
+  - title: "Next Steps for Human-Computer Integration"
+    year: 2020
+    authors: Florian Floyd Mueller, Pedro Lopes, Paul Strohmeier, Wendy Ju, Caitlyn Seim, Martin Weigel, Suranga Nanayakkara, Marianna Obrist, Zhuying Li, Joseph Delfa, Jun Nishida, Elizabeth M. Gerber, Dag Svanaes, Jonathan Grudin, Stefan Greuter, Kai Kunze, Thomas Erickson, Steven Greenspan, Masahiko Inami, Joe Marshall, Harald Reiterer, Katrin Wolf, Jochen Meyer, Thecla Schiphorst, Dakuo Wang, and Pattie Maes.
+    venue: User Interface Software and Technology (UIST '20)
+    description: 
+    tags:
+      - text: paper
+        style: magenta
+        
+  - title: "Novel Input and Output Opportunities Using an Implanted Magnet"
+    year: 2020
+    authors: Paul Strohmeier and Jess McIntosh
+    venue: User Interface Software and Technology (UIST '20)
+    description: 
+    tags:
+      - text: paper
+        style: magenta
+        
+  - title: "Novel Input and Output Opportunities Using an Implanted Magnet"
+    year: 2020
+    authors: Paul Strohmeier and Jess McIntosh
+    venue: User Interface Software and Technology (UIST '20)
+    description: 
+    tags:
+      - text: paper
+        style: magenta
+        
         
         
   - title: "From Pulse Trains to “Coloring with Vibrations”: Motion Mappings for Mid-Air Haptic Textures"
