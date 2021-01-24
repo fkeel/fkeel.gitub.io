@@ -13,7 +13,7 @@ timeline:
   - title: "Eyecam: Revealing Relations between Humans and Sensing Devices through an Anthropomorphic Webcam"
     year: 2021
     authors: Marc Teyssier, Marion Koelle,  <b>Paul Strohmeier</b>, Bruno Fruchard, and Jürgen Steimle
-    venue: Human Factors in Computing Systems (CHI'21)
+    venue: Human Factors in Computing Systems (CHI '21)
     description: Marc Teyssier built another one of his creepy anthropomorphic objects. This time as a camera. He wanted to use it as commentary on how we design sensing technology. I was involved with the framing and writing of the paper.
     tags:
       - text: paper
@@ -22,12 +22,20 @@ timeline:
   - title: "Squish This: Force Input on Soft Surfaces for Visual Targeting Tasks"
     year: 2021
     authors: Bruno Fruchard, <b>Paul Strohmeier</b>, Roland Bennewitz, and Jürgen Steimle
-    venue: Human Factors in Computing Systems (CHI'21)
+    venue: Human Factors in Computing Systems (CHI '21)
     description: This project developed from our interest in designing pressure input on the skin. We performed multiple experiments to better understand the overal space of providing pressure input on soft surfaces. One thing we noted is that our study setup generally produced much better results than the literature previously suggested. I advised on study design, and contributed to data analysis, framing and writing of the paper.
     tags:
       - text: paper
         style: magenta
     
+  - title: "BodyStylus: Freehand On-Skin Design and Fabrication of On-Body Interfaces"
+    year: 2021
+    authors: Narjes Pourjafarian, Marion Koelle, Bruno Fruchard, Sahar Mavali, Konstantin Klamka, Daniel Groeger, Paul Strohmeier, and Jürgen Steimle
+    venue: Human Factors in Computing Systems (CHI '21)
+    description: Here we present a concept and prototype implementation of concurrent, computer-supported sketching and implementing of epidermal devices. In many ways this was one of the most complex systems I've ever worked on, as the interplay between all the elements from new materials (the gold ink we used and the various substrate options we worked with) to hacked sensing devices (the on-skin Anoto tracking) to mechanical engineering (the modified dual-purpose pen) turned out much more complex than anyone anticipated. My involvement included the evaluation (together with a large chunk of work which we ended up removing from the paper, hopefully to be published inthe future), conceptualization, framing and writing and simply making sure we don't get lost in the details. 
+    tags:
+      - text: paper
+        style: magenta
 
   - title: "From Pulse Trains to “Coloring with Vibrations”: Motion Mappings for Mid-Air Haptic Textures"
     year: 2018
