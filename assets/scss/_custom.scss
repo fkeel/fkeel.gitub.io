@@ -220,6 +220,14 @@ $timeline-year-color: gray;
 }
 }
 
+.hr-override {
+  border-top: 10px dashed #f7f7f7;
+}
+
+.hr-override-1 {
+  border-top: 0px !important;
+}
+
 #price {
   display: inline;
 }
