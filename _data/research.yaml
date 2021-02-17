@@ -6,7 +6,7 @@ timeline:
     authors: Jarrod Knibbe, Rachel Freire, Marion Koelle, and <b>Paul Strohmeier</b>
     venue: Tangible, Embedded, and Embodied Interaction (TEI)
     description: Jarrod and I built a multi-electron sleeve for his research into EMS stimulation. We then invited Rachel Freire to join us in designing an updated version of that sleeve. This paper discusses this process and uses this to discuss the general concept of wearability. It was ages in the making. as Jarrod said "... and all it took was three weeks of writing -- and three years of talking about what to write".
-    image: /uploads/image/2017_IMWUT_EMS.jpg
+    image: /uploads/image/2021_CHI_eyeCam.jpg
     tags:
       - text: paper
         style: magenta
@@ -16,6 +16,7 @@ timeline:
     authors: Marc Teyssier, Marion Koelle,  <b>Paul Strohmeier</b>, Bruno Fruchard, and Jürgen Steimle
     venue: Human Factors in Computing Systems (CHI '21)
     description: Marc Teyssier built another one of his creepy anthropomorphic objects. This time as a camera. He wanted to use it as commentary on how we design sensing technology. I was involved with the framing and writing of the paper.
+    image: /uploads/image/2021_CHI_eyeCam.jpg
     tags:
       - text: paper
         style: magenta
@@ -25,6 +26,7 @@ timeline:
     authors: Bruno Fruchard, <b>Paul Strohmeier</b>, Roland Bennewitz, and Jürgen Steimle
     venue: Human Factors in Computing Systems (CHI '21)
     description: This project developed from our interest in designing pressure input on the skin. We performed multiple experiments to better understand the overal space of providing pressure input on soft surfaces. One thing we noted is that our study setup generally produced much better results than the literature previously suggested. I advised on study design, and contributed to data analysis, framing and writing of the paper.
+    image: /uploads/image/2021_CHI_squish.jpg
     tags:
       - text: paper
         style: magenta
