@@ -74,7 +74,6 @@ active_menu_title: "Research"
                  <p class="mt-3"><i>{{research_entry.authors}}</i> <br> in  <i>{{research_entry.venue}}</i></p>
               <p class="mt-3">{{research_entry.description}}</p>
 			   {% if research_entry.links.size > 0 %}Links:{% endif %}
-              Links:
               {% for link in research_entry.links %}
                 <a href="{{link.url | prepend: site.url }}">
                   <span class="badge badge-lg badge-pill btn-blue border-0 text-uppercase mb-1">{{link.name}}</span>
