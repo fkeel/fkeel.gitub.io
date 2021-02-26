@@ -82,7 +82,7 @@ timeline:
       - text: paper
         style: magenta
         
-  - title: "Novel Input and Output Opportunities Using an Implanted Magnet"
+  - title: "Sketching On-Body Interactions Using Piezo-Resistive Kinesiology Tape"
     year: 2020
     authors: Paul Strohmeier, Narjes Pourjafarian, Marion Koelle, Cedric Honnet, Bruno Fruchard, and J¨urgen Steimle
     venue: Augmented Humans (AHs '20)
@@ -92,7 +92,7 @@ timeline:
         style: magenta
         
     
-  - title: "Magnetips: Combining Fingertip Tracking and Haptic Feedback for Around-Device Interaction."
+  - title: "Magnetips: Combining Fingertip Tracking and Haptic Feedback for Around-Device Interaction"
     year: 2019
     authors: Jess McIntosh, Paul Strohmeier, Jarrod Knibbe, Sebastian Boring, and Kasper Hornbæk
     venue: Human Factors in Computing Systems (CHI'18)
@@ -103,7 +103,7 @@ timeline:
         style: magenta
 
         
-    - title: "Grappler: Array of bistable elements for pinching net-like infrastructure to low gravity bodies."
+  - title: "Grappler: Array of bistable elements for pinching net-like infrastructure to low gravity bodies"
     year: 2019
     authors: Paul Strohmeier, Victor H°akansson, Cedric Honnet, Daniel Ashbrook, and Kasper Hornbæk.
     venue: Tangible Embedded
@@ -113,7 +113,7 @@ timeline:
       - text: paper
         style: magenta
         
-    - title: "Optimizing Pressure Matrices: Interdigitation and Interpolation Methods for Continuous Position Input"
+  - title: "Optimizing Pressure Matrices: Interdigitation and Interpolation Methods for Continuous Position Input"
     year: 2019
     authors: Paul Strohmeier, Victor H°akansson, Cedric Honnet, Daniel Ashbrook, and Kasper Hornbæk.
     venue: Tangible, Embedded, and Embodied Interaction (TEI '19)
