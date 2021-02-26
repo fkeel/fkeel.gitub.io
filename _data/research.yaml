@@ -347,7 +347,7 @@ timeline:
     authors: Paul Strohmeier, Cedric Honnet, Samppa Von Cyborg
     venue: Living Machines – Biomimetic and Biohybrid systems – Springer LNAI Series (LM)
     description: This is a write-up of a little hackathon of Cedric Honnet and myself. We designed and implemented the implant presented in this paper from scratch within 7 days. Samppa von Cyborg supported with process by helping us understand the physical constraints presented by current body-mod methods
-    image: /uploads/image/2012_MJLA_small-1.jpg
+    image:  
     tags:
       - text: poster/demo
         style: yellow
