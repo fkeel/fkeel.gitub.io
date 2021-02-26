@@ -1,5 +1,34 @@
 intro: I am passionate about teaching others how to learn. I have taught and designed University level, high-school as well as corporate courses.
 
+
+timeline:
+  -   year: 2020
+      note:
+        title: Human Computer Interaction – Saarland University
+        image:
+        year: 2020-21
+        tags:
+          - text: Course
+            style: green
+        description: |
+
+            
+            
+timeline:
+  -   year: 2018
+      note:
+        title: User Interface Technologies – University of Copenhagen
+        image:
+        year: 2018
+        tags:
+          - text: Course
+            style: green
+        description: |
+          User Interface Technologies (UIT) is the hardware-focused Master level HCI course offered by the Department of Computer Science. I completely redesigned this course from bottom up. My personal aim of the course was for students to build a physical research prototype, learn how to position their own work relative to current research narratives, and communicate it effectively. In addition to the hardware-prototyping focus of the course, there is a strong emphasis on writing skills. Students work in groups of 3 – 4 on weekly assignments which build upon each other, culminating in a research paper and working demo.
+        links:
+          - name: UIT Webpage
+            url: http://studies.ku.dk/masters/computer-science/programme-structure/recommended_studytracks/hci/
+            
 timeline:
   -   year: 2017
       note:
