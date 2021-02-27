@@ -87,6 +87,7 @@ timeline:
     authors: Paul Strohmeier, Narjes Pourjafarian, Marion Koelle, Cedric Honnet, Bruno Fruchard, and J¨urgen Steimle
     venue: Augmented Humans (AHs '20)
     description: 
+    image: /uploads/image/2020_AHs_PolymerizedTape.jpg
     tags:
       - text: paper
         style: magenta
@@ -97,7 +98,7 @@ timeline:
     authors: Jess McIntosh, Paul Strohmeier, Jarrod Knibbe, Sebastian Boring, and Kasper Hornbæk
     venue: Human Factors in Computing Systems (CHI'18)
     description:  
-    image:
+    image: /uploads/image/2019_CHI_Magnetips.jpg
     tags:
       - text: paper
         style: magenta
@@ -108,7 +109,7 @@ timeline:
     authors: Paul Strohmeier, Victor H°akansson, Cedric Honnet, Daniel Ashbrook, and Kasper Hornbæk.
     venue: Tangible Embedded
     description:  
-    image:
+    image: /uploads/image/2019_Grappler.jpg
     tags:
       - text: paper
         style: magenta
@@ -118,7 +119,7 @@ timeline:
     authors: Paul Strohmeier, Victor H°akansson, Cedric Honnet, Daniel Ashbrook, and Kasper Hornbæk.
     venue: Tangible, Embedded, and Embodied Interaction (TEI '19)
     description:  
-    image:
+    image: /uploads/image/interdigitation.jpg
     tags:
       - text: paper
         style: magenta
