@@ -17,7 +17,7 @@ timeline:
   -   year: 2018
       note:
         title: User Interface Technologies – University of Copenhagen
-        image:
+        image: /uploads/image/2018_UIT_CPH.jpg
         year: 2018
         tags:
           - text: Course
@@ -31,7 +31,7 @@ timeline:
   -   year: 2017
       note:
         title: User Interface Technologies – University of Copenhagen
-        image:
+        image: /uploads/image/2017_UIT_CPH.jpg
         year: 2017
         tags:
           - text: Course
@@ -63,11 +63,12 @@ timeline:
             style: green
         description: |
           Intro to Cognitive Sciences – Queen’s University, Canada. I was a typical Teaching Assistant, mainly in charge of answering questions and grading assignments.
+       
 
   -   year: 2016
       note:
         title: Intro to Processing and Arduino
-        image:
+        image: /uploads/image/makerweek.jpg
         year: 2016
         tags:
           - text: Workshop
@@ -90,7 +91,7 @@ timeline:
   -   year: 2013
       note:
         title: Interactive Technology Workshops at Vienna Highschool (Kandlgasse)
-        image:
+        image: /uploads/image/kandlgasse.jpg
         year: 2013
         tags:
           - text: Workshop
@@ -116,13 +117,13 @@ timeline:
   -   year: 2018
       note:
         title: "Designing eTextiles for the Body: Shape, Volume &amp; Motion"
-        image:
         year: 2018
         tags:
           - text: Conference Workshop
             style: magenta
         authors: Rachel Freire, Paul Strohmeier, Cedric Honnet, Jarrod Knibbe, Sophia Brueckner
         venue: Workshop at TEI 2019
+        image: /uploads/image/2018_TEI_3dTextiles.jpg
         links:
           - name: web
             url: https://3dtextiles.github.io/
