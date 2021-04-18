@@ -10,6 +10,14 @@ timeline:
     tags:
       - text: paper
         style: magenta
+    links:
+      - name: pdf
+        url: /uploads/pdf/2021_TEI_SkillSleeves.pdf
+      - name: talk
+        url: https://www.youtube.com/watch?v=XgfLRmisPzM
+      - name: Project Page
+        url: https://skillsleeves.github.io
+
         
   - title: "Eyecam: Revealing Relations between Humans and Sensing Devices through an Anthropomorphic Webcam"
     year: 2021
@@ -50,6 +58,13 @@ timeline:
     tags:
       - text: paper
         style: magenta
+    links:
+      - name: pdf
+        url: /uploads/pdf/2020_UIST_bARefoot.pdf
+      - name: talk
+        url: https://www.youtube.com/watch?v=22R1RkG6wNU
+      - name: News Report (German)
+        url: https://www.youtube.com/watch?v=R0XrKNHfcAU
         
         
   - title: "PolySense: Augmenting Textiles with Electrical Functionality Using In-Situ Polymerization"
@@ -61,6 +76,10 @@ timeline:
     tags:
       - text: paper
         style: magenta
+    links:
+      - name: Project Page
+        url: https://counterchemists.github.io
+
         
   - title: "Next Steps for Human-Computer Integration"
     year: 2020
@@ -138,7 +157,7 @@ timeline:
         style: magenta
     links:
       - name: pdf
-        url: /uploads/pdf/018_CHI_midAirTextures.pdf
+        url: /uploads/pdf/2018_CHI_midAirTextures.pdf
       - name: video
         url: https://www.youtube.com/watch?v=pJ8MiFiMWHI
 
