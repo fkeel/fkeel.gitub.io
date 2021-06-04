@@ -77,6 +77,8 @@ timeline:
       - text: paper
         style: magenta
     links:
+      - name: pdf
+        url: /uploads/pdf/2020_CHI_PolySense.pdf
       - name: Project Page
         url: https://counterchemists.github.io
 
@@ -90,6 +92,9 @@ timeline:
     tags:
       - text: paper
         style: magenta
+    links:
+      - name: pdf
+        url: /uploads/pdf/2020_CHI_Hint.pdf
         
   - title: "Novel Input and Output Opportunities Using an Implanted Magnet"
     year: 2020
@@ -100,6 +105,9 @@ timeline:
     tags:
       - text: paper
         style: magenta
+    links:
+      - name: pdf
+        url: /uploads/pdf/2020_AHs_Implant.pdf
         
   - title: "Sketching On-Body Interactions Using Piezo-Resistive Kinesiology Tape"
     year: 2020
@@ -110,7 +118,9 @@ timeline:
     tags:
       - text: paper
         style: magenta
-        
+    links:
+      - name: pdf
+        url: /uploads/pdf/2020_AHs_SketchingOnBody.pdf        
     
   - title: "Magnetips: Combining Fingertip Tracking and Haptic Feedback for Around-Device Interaction"
     year: 2019
