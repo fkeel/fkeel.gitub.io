@@ -131,7 +131,9 @@ timeline:
     tags:
       - text: paper
         style: magenta
-
+    links:
+      - name: pdf
+        url: /uploads/pdf/2020_CHI_Magnetips.pdf   
         
   - title: "Grappler: Array of bistable elements for pinching net-like infrastructure to low gravity bodies"
     year: 2019
@@ -142,6 +144,9 @@ timeline:
     tags:
       - text: paper
         style: magenta
+    links:
+      - name: pdf
+        url: /uploads/pdf/2019_AIAA_Grappler.pdf  
         
   - title: "Optimizing Pressure Matrices: Interdigitation and Interpolation Methods for Continuous Position Input"
     year: 2019
