@@ -148,6 +148,7 @@ timeline:
       - name: pdf
         url: /uploads/pdf/2019_AIAA_Grappler.pdf  
         
+        
   - title: "Optimizing Pressure Matrices: Interdigitation and Interpolation Methods for Continuous Position Input"
     year: 2019
     authors: Paul Strohmeier, Victor H°akansson, Cedric Honnet, Daniel Ashbrook, and Kasper Hornbæk.
